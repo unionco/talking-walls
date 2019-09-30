@@ -1,0 +1,84 @@
+/* =============== */
+/* Consulting Theme */
+/* =============== */
+
+.free-consulting .free-header h1, .free-consulting .free-header h1 span,
+    .free-consulting .free-header h2, .free-consulting .free-header h2 span,
+        .free-consulting .free-header h3, .free-consulting .free-header h3 span,
+			.free-consulting .free-header h4, .free-consulting .free-header h4 span,
+				.free-consulting .free-header h5, .free-consulting .free-header h5 span,
+					.free-consulting .free-header h6, .free-consulting .free-header h6 span {
+    font-size: 37px!important;
+    color: #333;
+    letter-spacing: 0px;
+    line-height: 1.2em;
+    margin-bottom: 16px;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 980px) {
+    .free-consulting .free-header h1, .free-consulting .free-header h1 span,
+        .free-consulting .free-header h2, .free-consulting .free-header h2 span,
+            .free-consulting .free-header h3, .free-consulting .free-header h3 span,
+				.free-consulting .free-header h4, .free-consulting .free-header h4 span,
+					.free-consulting .free-header h5, .free-consulting .free-header h5 span,
+						.free-consulting .free-header h6, .free-consulting .free-header h6 span {
+        font-size: 35px!important;
+    }
+}
+
+html.et_fb_preview_active--responsive_preview .free-consulting .free-header h1,
+    html.et_fb_preview_active--responsive_preview .free-consulting .free-header h1 span,
+         html.et_fb_preview_active--responsive_preview .free-consulting .free-header h2, 
+             html.et_fb_preview_active--responsive_preview .free-consulting .free-header h2 span,
+                 html.et_fb_preview_active--responsive_preview .free-consulting .free-header h3,
+                     html.et_fb_preview_active--responsive_preview .free-consulting .free-header h3 span,
+                         html.et_fb_preview_active--responsive_preview .free-consulting .free-header h4,
+                             html.et_fb_preview_active--responsive_preview .free-consulting .free-header h4 span,
+								 html.et_fb_preview_active--responsive_preview .free-consulting .free-header h5,
+									 html.et_fb_preview_active--responsive_preview .free-consulting .free-header h5 span,
+										 html.et_fb_preview_active--responsive_preview .free-consulting .free-header h6,
+											 html.et_fb_preview_active--responsive_preview .free-consulting .free-header h6 span {
+    font-size: 35px!important;
+}
+
+.free-consulting .free-header-top-text {
+    font-size: 15px!important;
+    letter-spacing: 0px;
+    color: #222;
+    padding-left: 18px;
+    margin-bottom: 14px!important;
+}
+.free-consulting .free-header-top-text .et_pb_text_inner:before {
+    height: 6px;
+    width: 28px;
+    position: absolute;
+    top: 7px;
+    left: -18px;
+    background: #3aeea0;
+    content: "";
+    z-index: 1;
+}
+.free-consulting .free-header-top-text .et_pb_text_inner {
+    display: inline-block!important;
+}
+.free-consulting .free-header-top-text .et_pb_text_inner p {
+    position: relative;
+    z-index: 2;
+}
+
+.free-consulting .free-header p {
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.free-consulting .free-header-border-bottom {
+    display: none!important;
+}
+
+.free-consulting .free-testimonial-slider-modern .free-testimonial-content:after {
+    background-image: url(/wp-content/plugins/Divi-Ultimate-Plugin/images/consulting-quote.png);
+}
+.free-consulting .free-testimonial-slider-modern .et-pb-slider-arrows a:hover {
+    background-color: #3143ee!important;
+}

@@ -1,0 +1,51 @@
+/* ===================== */
+/* Interior Design Theme */
+/* ===================== */
+
+.free-interior .free-header h1, .free-interior .free-header h1 span,
+    .free-interior .free-header h2, .free-interior .free-header h2 span,
+        .free-interior .free-header h3, .free-interior .free-header h3 span,
+            .free-interior .free-header h4, .free-interior .free-header h4 span,
+				.free-interior .free-header h5, .free-interior .free-header h5 span,
+					.free-interior .free-header h6, .free-interior .free-header h6 span {
+    font-size: 42px!important;
+    color: #222;
+    letter-spacing: 2px;
+}
+
+.free-interior .free-blog-list-1 .entry-title:before {
+    background: #FAB702!important;
+}
+
+.free-interior .free-blog-list-1 .post-meta:before {
+    color: #FAB702!important;
+}
+.free-interior .et_pb_blog_grid .et_pb_post .post-content .more-link {
+    color: #222!important;
+}
+
+@media screen and (max-width: 767px) {
+    .free-interior .free-header h1, .free-interior .free-header h1 span,
+        .free-interior .free-header h2, .free-interior .free-header h2 span,
+            .free-interior .free-header h3, .free-interior .free-header h3 span,
+				.free-interior .free-header h4, .free-interior .free-header h4 span,
+					.free-interior .free-header h5, .free-interior .free-header h5 span,
+						.free-interior .free-header h6, .free-interior .free-header h6 span {
+        font-size: 33px!important;
+    }
+}
+
+html.et_fb_preview_active--responsive_preview .free-interior .free-header h1,
+    html.et_fb_preview_active--responsive_preview .free-interior .free-header h1 span,
+         html.et_fb_preview_active--responsive_preview .free-interior .free-header h2, 
+             html.et_fb_preview_active--responsive_preview .free-interior .free-header h2 span,
+                 html.et_fb_preview_active--responsive_preview .free-interior .free-header h3,
+                     html.et_fb_preview_active--responsive_preview .free-interior .free-header h3 span,
+                         html.et_fb_preview_active--responsive_preview .free-interior .free-header h4,
+                             html.et_fb_preview_active--responsive_preview .free-interior .free-header h4 span,
+								 html.et_fb_preview_active--responsive_preview .free-interior .free-header h5,
+									 html.et_fb_preview_active--responsive_preview .free-interior .free-header h5 span,
+										 html.et_fb_preview_active--responsive_preview .free-interior .free-header h6,
+											 html.et_fb_preview_active--responsive_preview .free-interior .free-header h6 span {
+    font-size: 33px!important;
+}

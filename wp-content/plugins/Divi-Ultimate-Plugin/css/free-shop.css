@@ -1,0 +1,63 @@
+/* ========== */
+/* Shop Theme */
+/* ========== */
+
+.free-shop .free-header h1, .free-shop .free-header h1 span,
+    .free-shop .free-header h2, .free-shop .free-header h2 span,
+        .free-shop .free-header h3, .free-shop .free-header h3 span,
+            .free-shop .free-header h4, .free-shop .free-header h4 span,
+				.free-shop .free-header h5, .free-shop .free-header h5 span,
+					.free-shop .free-header h6, .free-shop .free-header h6 span {
+    font-size: 50px!important;
+    color: #222;
+    letter-spacing: 2px;
+}
+
+.free-shop .free-header p {
+    margin-top: 12px;
+    color: #838383;
+    font-size: 19px;
+    line-height: 1.6em;
+}
+
+.free-shop .free-header p.et-fb-mce-line-break-holder {
+    margin-top: 0;
+}
+
+.free-shop .free-header-border-bottom {
+    display: none!important;
+}
+
+@media screen and (max-width: 767px) {
+    .free-shop .free-header h1, .free-shop .free-header h1 span,
+        .free-shop .free-header h2, .free-shop .free-header h2 span,
+            .free-shop .free-header h3, .free-shop .free-header h3 span,
+				.free-shop .free-header h4, .free-shop .free-header h4 span,
+					.free-shop .free-header h5, .free-shop .free-header h5 span,
+						.free-shop .free-header h6, .free-shop .free-header h6 span {
+        font-size: 35px!important;
+    }
+}
+
+html.et_fb_preview_active--responsive_preview .free-shop .free-header h1,
+    html.et_fb_preview_active--responsive_preview .free-shop .free-header h1 span,
+         html.et_fb_preview_active--responsive_preview .free-shop .free-header h2, 
+             html.et_fb_preview_active--responsive_preview .free-shop .free-header h2 span,
+                 html.et_fb_preview_active--responsive_preview .free-shop .free-header h3,
+                     html.et_fb_preview_active--responsive_preview .free-shop .free-header h3 span,
+                         html.et_fb_preview_active--responsive_preview .free-shop .free-header h4,
+                             html.et_fb_preview_active--responsive_preview .free-shop .free-header h4 span,
+								 html.et_fb_preview_active--responsive_preview .free-shop .free-header h5,
+									 html.et_fb_preview_active--responsive_preview .free-shop .free-header h5 span,
+										 html.et_fb_preview_active--responsive_preview .free-shop .free-header h6,
+											 html.et_fb_preview_active--responsive_preview .free-shop .free-header h6 span {
+    font-size: 35px!important;
+}
+
+.free-shop .free-blog-list-1 .entry-title:before {
+    background: #ffd200!important;
+}
+
+.free-shop .free-blog-list-1 .post-meta:before {
+    color: #ffd200!important;
+}

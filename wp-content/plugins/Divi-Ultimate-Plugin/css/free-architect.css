@@ -1,0 +1,25 @@
+/* =============== */
+/* Architect Theme */
+/* =============== */
+
+.free-architect .free-header h1, .free-architect .free-header h1 span,
+    .free-architect .free-header h2, .free-architect .free-header h2 span,
+        .free-architect .free-header h3, .free-architect .free-header h3 span,
+            .free-architect .free-header h4, .free-architect .free-header h4 span,
+				.free-architect .free-header h5, .free-architect .free-header h5 span,
+					.free-architect .free-header h6, .free-architect .free-header h6 span {
+    font-size: 35px!important;
+}
+.free-architect .free-header h2:before {
+    content: '/';
+    color: #e31d3b;
+    margin-right: 12px;
+}
+
+.free-architect .free-blog-list-1 .entry-title:before {
+    background: #e31d3b!important;
+}
+
+.free-architect .free-blog-list-1 .post-meta:before {
+    color: #e31d3b!important;
+}

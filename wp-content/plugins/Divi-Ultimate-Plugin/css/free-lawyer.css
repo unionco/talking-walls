@@ -1,0 +1,68 @@
+/* ============ */
+/* Lawyer Theme */
+/* ============ */
+
+.free-lawyer .free-header h1, .free-lawyer .free-header h1 span,
+    .free-lawyer .free-header h2, .free-lawyer .free-header h2 span,
+        .free-lawyer .free-header h3, .free-lawyer .free-header h3 span,
+            .free-lawyer .free-header h4, .free-lawyer .free-header h4 span,
+				.free-lawyer .free-header h5, .free-lawyer .free-header h5 span,
+					.free-lawyer .free-header h6, .free-lawyer .free-header h6 span {
+    font-size: 48px!important;
+    color: #333;
+    letter-spacing: 3px;
+    line-height: 1.1em;
+    padding-bottom: 21px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 980px) {
+    .free-lawyer .free-header h1, .free-lawyer .free-header h1 span,
+        .free-lawyer .free-header h2, .free-lawyer .free-header h2 span,
+            .free-lawyer .free-header h3, .free-lawyer .free-header h3 span,
+				.free-lawyer .free-header h4, .free-lawyer .free-header h4 span,
+					.free-lawyer .free-header h5, .free-lawyer .free-header h5 span,
+						.free-lawyer .free-header h6, .free-lawyer .free-header h6 span {
+        font-size: 38px!important;
+    }
+}
+
+html.et_fb_preview_active--responsive_preview .free-lawyer .free-header h1,
+    html.et_fb_preview_active--responsive_preview .free-lawyer .free-header h1 span,
+         html.et_fb_preview_active--responsive_preview .free-lawyer .free-header h2, 
+             html.et_fb_preview_active--responsive_preview .free-lawyer .free-header h2 span,
+                 html.et_fb_preview_active--responsive_preview .free-lawyer .free-header h3,
+                     html.et_fb_preview_active--responsive_preview .free-lawyer .free-header h3 span,
+                         html.et_fb_preview_active--responsive_preview .free-lawyer .free-header h4,
+                             html.et_fb_preview_active--responsive_preview .free-lawyer .free-header h4 span,
+								 html.et_fb_preview_active--responsive_preview .free-lawyer .free-header h5,
+									 html.et_fb_preview_active--responsive_preview .free-lawyer .free-header h5 span,
+										 html.et_fb_preview_active--responsive_preview .free-lawyer .free-header h6,
+											 html.et_fb_preview_active--responsive_preview .free-lawyer .free-header h6 span {
+    font-size: 38px!important;
+}
+
+.free-lawyer .free-header-small h1, .free-lawyer .free-header-small h1 span,
+	.free-lawyer .free-header-small h2, .free-lawyer .free-header-small h2 span,
+		.free-lawyer .free-header-small h3, .free-lawyer .free-header-small h3 span,
+            .free-lawyer .free-header-small h4, .free-lawyer .free-header-small h4 span,
+				.free-lawyer .free-header-small h5, .free-lawyer .free-header-small h5 span,
+					.free-lawyer .free-header-small h6, .free-lawyer .free-header-small h6 span {
+    font-size: 24px!important;
+    color: #ea4a4a;
+    letter-spacing: 2px;
+}
+
+.free-lawyer .free-header .free-header-border-bottom {
+    height: 6px!important;
+    width: 36px!important;
+    margin: 23px 0 30px 0!important;
+    background: #ea4a4a!important;
+}
+
+.free-lawyer .free-header p {
+    font-size: 14px;
+    line-height: 1.8em;
+    letter-spacing: 0px;
+    margin-top: 0px;
+}

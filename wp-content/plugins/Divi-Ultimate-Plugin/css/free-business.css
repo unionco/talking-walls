@@ -1,0 +1,38 @@
+/* ============== */
+/* Business Theme */
+/* ============== */
+
+.free-business .free-header h1, .free-business .free-header h1 span,
+    .free-business .free-header h2, .free-business .free-header h2 span,
+        .free-business .free-header h3, .free-business .free-header h3 span,
+            .free-business .free-header h4, .free-business .free-header h4 span,
+				.free-business .free-header h5, .free-business .free-header h5 span,
+					.free-business .free-header h6, .free-business .free-header h6 span	{
+    font-size: 45px!important;
+    color: #002e5b;
+    letter-spacing: -3px;
+}
+
+.free-business .free-header-border-bottom {
+    height: 6px!important;
+    width: 30px!important;
+    margin: 12px 0 12px 0!important;
+    background-color: #fde428!important;
+}
+
+.free-business .free-simple.free-icon-right.free-hover.et_pb_blurb_position_left:hover .et_pb_blurb_container h4,
+    .free-business .free-simple.free-icon-right.free-hover.et_pb_blurb_position_left:hover .et_pb_main_blurb_image span {
+    color: #002e5b!important;
+}
+
+.free-business .free-simple.free-icon-right.free-hover.et_pb_blurb_position_left:hover {
+     background-color: #fff;
+}
+
+.free-business .free-blog-list-1 .entry-title:before {
+    background: #fde428!important;
+}
+
+.free-business .free-blog-list-1 .post-meta:before {
+    color: #fde428!important;
+}
