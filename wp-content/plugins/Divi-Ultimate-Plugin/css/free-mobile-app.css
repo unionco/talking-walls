@@ -1,0 +1,60 @@
+/* =============== */
+/* Mobile App Theme */
+/* =============== */
+
+.free-mobile-app .free-header h1, .free-mobile-app .free-header h1 span,
+    .free-mobile-app .free-header h2, .free-mobile-app .free-header h2 span,
+        .free-mobile-app .free-header h3, .free-mobile-app .free-header h3 span,
+			.free-mobile-app .free-header h4, .free-mobile-app .free-header h4 span,
+				.free-mobile-app .free-header h5, .free-mobile-app .free-header h5 span,
+					.free-mobile-app .free-header h6, .free-mobile-app .free-header h6 span {
+    font-size: 52px!important;
+    color: #333;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 980px) {
+    .free-mobile-app .free-header h1, .free-mobile-app .free-header h1 span,
+        .free-mobile-app .free-header h2, .free-mobile-app .free-header h2 span,
+            .free-mobile-app .free-header h3, .free-mobile-app .free-header h3 span,
+				.free-mobile-app .free-header h4, .free-mobile-app .free-header h4 span,
+					.free-mobile-app .free-header h5, .free-mobile-app .free-header h5 span,
+						.free-mobile-app .free-header h6, .free-mobile-app .free-header h6 span {
+        font-size: 35px!important;
+    }
+}
+html.et_fb_preview_active--responsive_preview .free-mobile-app .free-header h1,
+    html.et_fb_preview_active--responsive_preview .free-mobile-app .free-header h1 span,
+         html.et_fb_preview_active--responsive_preview .free-mobile-app .free-header h2, 
+             html.et_fb_preview_active--responsive_preview .free-mobile-app .free-header h2 span,
+                 html.et_fb_preview_active--responsive_preview .free-mobile-app .free-header h3,
+                     html.et_fb_preview_active--responsive_preview .free-mobile-app .free-header h3 span,
+                         html.et_fb_preview_active--responsive_preview .free-mobile-app .free-header h4,
+                             html.et_fb_preview_active--responsive_preview .free-mobile-app .free-header h4 span,
+								 html.et_fb_preview_active--responsive_preview .free-mobile-app .free-header h5,
+									 html.et_fb_preview_active--responsive_preview .free-mobile-app .free-header h5 span,
+										 html.et_fb_preview_active--responsive_preview .free-mobile-app .free-header h6,
+											 html.et_fb_preview_active--responsive_preview .free-mobile-app .free-header h6 span {
+    font-size: 35px!important;
+}
+
+.free-mobile-app .free-header p {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 22px!important;
+    margin-bottom: 30px!important;
+    line-height: 1.8em;
+    margin-top: 26px;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 980px) {
+    .free-mobile-app .free-header p {
+        font-size: 18px!important;
+    }
+}
+html.et_fb_preview_active--responsive_preview .free-mobile-app .free-header p {
+    font-size: 18px!important;
+}
+
+.free-mobile-app .free-header-border-bottom {
+    display: none!important;
+}

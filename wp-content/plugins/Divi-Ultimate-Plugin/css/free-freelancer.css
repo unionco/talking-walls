@@ -1,0 +1,12 @@
+/* ================ */
+/* Freelancer Theme */
+/* ================ */
+
+.free-freelancer .free-header h1, .free-freelancer .free-header h1 span,
+    .free-freelancer .free-header h2, .free-freelancer .free-header h2 span,
+        .free-freelancer .free-header h3, .free-freelancer .free-header h3 span,
+            .free-freelancer .free-header h4, .free-freelancer .free-header h4 span,
+				.free-freelancer .free-header h5, .free-freelancer .free-header h5 span,
+					.free-freelancer .free-header h6, .free-freelancer .free-header h6 span {
+    font-size: 30px!important;
+}

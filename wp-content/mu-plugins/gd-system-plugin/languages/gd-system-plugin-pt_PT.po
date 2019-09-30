@@ -1,0 +1,739 @@
+# Copyright (c) 2019 GoDaddy Operating Company, LLC. All Rights Reserved.
+msgid ""
+msgstr ""
+"Project-Id-Version: System Plugin 3.9.8\n"
+"POT-Creation-Date: 2019-08-15 23:00:35+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: gd-system-plugin/includes/admin/class-bar.php:105
+#: gd-system-plugin/includes/admin/class-bar.php:141
+#: gd-system-plugin/includes/admin/class-bar.php:152
+#: gd-system-plugin/includes/class-hotfixes.php:222
+msgid "Managed WordPress"
+msgstr "WordPress gerido"
+
+#: gd-system-plugin/includes/admin/class-bar.php:194
+msgid "Flush Cache"
+msgstr "Libertar cache"
+
+#: gd-system-plugin/includes/admin/class-bar.php:221
+msgid "Account Settings"
+msgstr "Definições da Conta"
+
+#: gd-system-plugin/includes/admin/class-bar.php:249
+msgid "Connection Management"
+msgstr "Gestão da ligação"
+
+#: gd-system-plugin/includes/admin/class-bar.php:274
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:71
+msgid "WooCommerce Extensions"
+msgstr "Extensões do WooCommerce"
+
+#: gd-system-plugin/includes/admin/class-dashboard-wp5-panel.php:100
+msgid "Install the Classic Editor"
+msgstr "Instalar o Classic Editor"
+
+#: gd-system-plugin/includes/admin/class-dashboard-wp5-panel.php:106
+msgid "Activate Plugin"
+msgstr "Ativar suplemento"
+
+#: gd-system-plugin/includes/admin/class-dashboard-wp5-panel.php:173
+msgid "Dismiss"
+msgstr "Ignorar"
+
+#: gd-system-plugin/includes/admin/class-dashboard-wp5-panel.php:175
+msgid "Welcome to WordPress&nbsp;%s"
+msgstr "Bem-vindo ao WordPress&nbsp;%s"
+
+#: gd-system-plugin/includes/admin/class-dashboard-wp5-panel.php:176
+msgid ""
+"Thank you for updating to the latest version! WordPress %s introduces a "
+"robust new content creation experience."
+msgstr ""
+"Obrigado por efetuar a atualização para a versão mais recente! O WordPress %s "
+"apresenta uma nova experiência robusta de criação de conteúdo."
+
+#: gd-system-plugin/includes/admin/class-dashboard-wp5-panel.php:187
+msgid "Say Hello to the New Editor"
+msgstr "Explorar o novo editor"
+
+#: gd-system-plugin/includes/admin/class-dashboard-wp5-panel.php:188
+msgid ""
+"You&#8217;ve successfully upgraded to WordPress 5.0! We’ve made some big "
+"changes to the editor. Our new block-based editor is the first step toward "
+"an exciting new future with a streamlined editing experience across your "
+"site. You’ll have more flexibility with how content is displayed, whether "
+"you are building your first site, revamping your blog, or write code for a "
+"living."
+msgstr ""
+"Efetuou a atualização para o WordPress 5.0 com êxito! Implementámos algumas "
+"alterações importantes no editor. O nosso novo editor baseado em blocos é o "
+"primeiro passo em direção a um futuro empolgante, fornecendo uma experiência "
+"de edição integrada no âmbito de todo o seu site. Terá mais flexibilidade em "
+"relação à forma como o conteúdo é apresentado, independentemente de estar a "
+"criar o seu primeiro site, a renovar um blogue ou a escrever código profissionalmente."
+
+#: gd-system-plugin/includes/admin/class-dashboard-wp5-panel.php:191
+msgid "Build your first post"
+msgstr "Crie a sua primeira publicação"
+
+#: gd-system-plugin/includes/admin/class-dashboard-wp5-panel.php:196
+msgid "Keep it Classic"
+msgstr "Manter o Classic Editor"
+
+#: gd-system-plugin/includes/admin/class-dashboard-wp5-panel.php:197
+msgid ""
+"Prefer to stick with the familiar Classic Editor? No problem! Support for "
+"the Classic Editor plugin will remain in WordPress through 2021."
+msgstr ""
+"Prefere continuar com o Classic Editor? Não há problema! A compatibilidade "
+"com o suplemento Classic Editor será preservada no WordPress até 2021."
+
+#: gd-system-plugin/includes/admin/class-dashboard-wp5-panel.php:198
+msgid ""
+"Note to users of assistive technology: if you experience usability issues "
+"with the block editor, we recommend you continue to use the Classic Editor."
+msgstr ""
+"Observação para os utilizadores de tecnologia de assistência: no caso de se "
+"deparar com problemas de usabilidade no Block Editor, recomendamos que "
+"continue a utilizar o Classic Editor."
+
+#: gd-system-plugin/includes/admin/class-dashboard-wp5-panel.php:201
+msgid "Classic Editor"
+msgstr "Classic Editor"
+
+#: gd-system-plugin/includes/admin/class-file-editor.php:78
+msgid "File editing enabled"
+msgstr "Edição de ficheiro ativa"
+
+#: gd-system-plugin/includes/admin/class-file-editor.php:135
+msgid "File editing is not enabled on this site."
+msgstr "A edição de ficheiros não está ativada neste sítio."
+
+#: gd-system-plugin/includes/admin/class-file-editor.php:170
+msgid "File Editor"
+msgstr "Editor de ficheiros"
+
+#: gd-system-plugin/includes/admin/class-file-editor.php:171
+msgid "For your security, the WordPress file editor is disabled by default."
+msgstr "Para a sua própria segurança, o editor de ficheiros do WordPress está desativado por predefinição."
+
+#: gd-system-plugin/includes/admin/class-file-editor.php:171
+msgid "Learn More"
+msgstr "Obter mais informações"
+
+#: gd-system-plugin/includes/admin/class-file-editor.php:172
+msgid ""
+"If you enable file editing all plugin and theme files on the server will "
+"become editable."
+msgstr ""
+"Se ativar a edição de ficheiros, todos os suplementos e ficheiros de temas no "
+"servidor tornar-se-ão editáveis."
+
+#: gd-system-plugin/includes/admin/class-file-editor.php:176
+msgid "I understand the risks involved with enabling this feature"
+msgstr "Compreendo os riscos da ativação desta funcionalidade"
+
+#: gd-system-plugin/includes/admin/class-file-editor.php:179
+msgid "Enable File Editing"
+msgstr "Ativar edição de ficheiros"
+
+#: gd-system-plugin/includes/admin/class-growl.php:102
+msgid "Success"
+msgstr "Sucesso"
+
+#: gd-system-plugin/includes/admin/class-pages.php:94
+msgid "FAQ &amp; Support"
+msgstr "Perguntas frequentes &amp; Assistência"
+
+#: gd-system-plugin/includes/admin/class-pages.php:214
+#: gd-system-plugin/includes/admin/class-pages.php:215
+#: gd-system-plugin/includes/class-hotfixes.php:218
+msgid "GoDaddy"
+msgstr "GoDaddy"
+
+#: gd-system-plugin/includes/admin/class-pages.php:319
+msgid "Are you sure? This cannot be undone."
+msgstr "Tem a certeza? Esta ação não pode ser anulada."
+
+#: gd-system-plugin/includes/admin/class-pointers.php:49
+msgid "Good news!"
+msgstr "Boas notícias!"
+
+#: gd-system-plugin/includes/admin/class-pointers.php:50
+msgid ""
+"You can now access <strong>Flush Cache</strong> and other links directly "
+"from the admin bar using your desktop or mobile device."
+msgstr ""
+"Pode agora aceder à <strong>Flush Cache</strong> e a outras ligações "
+"diretamente da barra admin usando o seu computador ou dispositivo móvel."
+
+#: gd-system-plugin/includes/admin/class-themes-tab.php:96
+msgid "GoDaddy Themes"
+msgstr "Temas da GoDaddy"
+
+#: gd-system-plugin/includes/admin/class-themes-tab.php:97
+#: gd-system-plugin/includes/admin/class-themes-tab.php:197
+msgid "Installed"
+msgstr "Instalado"
+
+#: gd-system-plugin/includes/admin/class-themes-tab.php:98
+msgid "Error Installing Theme"
+msgstr "Erro ao instalar o tema"
+
+#: gd-system-plugin/includes/admin/class-themes-tab.php:99
+#: gd-system-plugin/includes/admin/class-themes-tab.php:201
+msgid "Activate"
+msgstr "Activar"
+
+#: gd-system-plugin/includes/admin/class-themes-tab.php:100
+#: gd-system-plugin/includes/admin/class-themes-tab.php:203
+msgid "Live Preview"
+msgstr "Pré-visualização ao vivo"
+
+#: gd-system-plugin/includes/admin/class-themes-tab.php:101
+msgid "Theme Install"
+msgstr "Instalação do tema"
+
+#: gd-system-plugin/includes/admin/class-themes-tab.php:181
+msgid "Install %s"
+msgstr "Instalar o %s"
+
+#: gd-system-plugin/includes/admin/class-themes-tab.php:184
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:110
+msgid "Install"
+msgstr "Instalar"
+
+#: gd-system-plugin/includes/admin/class-themes-tab.php:227
+msgid "View Demo"
+msgstr "Ver Demonstração"
+
+#: gd-system-plugin/includes/admin/class-themes-tab.php:228
+msgid "By GoDaddy"
+msgstr "Fornecido pela GoDaddy"
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:91
+msgid ""
+"Here is a list of free WooCommerce extensions that come with your site. "
+"Install the ones you would like to use."
+msgstr ""
+"Segue-se uma lista das extensões gratuitas do WooCommerce que são fornecidas "
+"com o seu site. Instale as que gostaria de utilizar."
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:111
+#: gd-system-plugin/includes/class-debug-mode.php:604
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:148
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:197
+msgid "Connect to WordPress.com"
+msgstr "Associar ao WordPress.com"
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:151
+#. translators: Anchor tag link to WordPress.com authentication URL
+msgid ""
+"To give you the benefits of the premium WooCommerce features, we need to "
+"connect to a WordPress.com account. %s."
+msgstr ""
+"Para lhe fornecer as vantagens das funcionalidades Premium do WooCommerce, "
+"necessitamos de estabelecer uma ligação a uma conta do site WordPress.com. %s."
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:155
+msgid "Sign in/Sign up"
+msgstr "Inicie uma sessão/Inscreva-se"
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:167
+#. translators: 1. Admin email address. 2. Link to WordPress.com authentication
+#. page.
+msgid ""
+"Looks like you already have a WordPress account with %1$s. %2$s to your "
+"account to get the benefits of the premium WooCommerce features."
+msgstr ""
+"Aparentemente, já tem uma conta do WordPress com o endereço %1$s. %2$s na sua "
+"conta para obter as vantagens das funcionalidades Premium do WooCommerce."
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:172
+msgid "Sign In"
+msgstr "Iniciar sessão"
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:180
+#. translators: 1. Checkmark. 2. Anchor tag link to WordPress.com
+msgid "%1$s Success! You're connected to WordPress.com. %2$s."
+msgstr "%1$s Operação realizada com êxito! Estabeleceu uma ligação ao site WordPress.com. %2$s."
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:185
+msgid "Change"
+msgstr "Alterar"
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:216
+msgid "WordPress.com access token is missing."
+msgstr "O código de autenticação de acesso ao site WordPress.com está em falta."
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:293
+msgid "View More"
+msgstr "Ver mais"
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:354
+msgid "Error retreiving extension data. Please try again."
+msgstr "Erro ao obter os dados das extensões. Tente novamente."
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:367
+msgid "Extension slug not found in list of available plugins."
+msgstr "Campo de dados dinâmico da extensão não encontrado na lista de suplementos disponíveis."
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:402
+#. Translators: 1. The name of the extension. 2. Link to the plugins page.
+msgid ""
+"%1$s was installed but encountered an error during activation. Manually "
+"activate the plugin on the %2$s."
+msgstr ""
+"A extensão %1$s foi instalada, mas deparou-se com um erro durante a ativação. "
+"Ative o suplemento manualmente na %2$s."
+
+#: gd-system-plugin/includes/admin/class-woo-extensions.php:407
+msgid "plugins page"
+msgstr "página de suplementos"
+
+#: gd-system-plugin/includes/class-blacklist.php:94
+#. translators: Name of the disallowed plugin
+msgid "%s is not allowed on our system. It has been automatically deactivated."
+msgstr "O %s não é permitido no nosso sistema. O mesmo foi desativado automaticamente."
+
+#: gd-system-plugin/includes/class-blacklist.php:229
+msgid "Not Available"
+msgstr "Indisponível"
+
+#: gd-system-plugin/includes/class-blacklist.php:230
+msgid ""
+"This plugin is not allowed on our system due to performance, security, or "
+"compatibility concerns. Please contact support with any questions."
+msgstr ""
+"Este suplemento não é permitido no nosso sistema por questões de desempenho, "
+"segurança ou compatibilidade. Se tiver alguma dúvida, contacte a assistência."
+
+#: gd-system-plugin/includes/class-cache.php:116
+msgid "Cache cleared"
+msgstr "Cache limpa"
+
+#: gd-system-plugin/includes/class-change-domain.php:61
+#: gd-system-plugin/includes/class-change-domain.php:161
+#. translators: Title of alert in bold
+msgid "%s Your domain cannot be changed here."
+msgstr "%s Não é possível alterar o seu domínio aqui."
+
+#: gd-system-plugin/includes/class-change-domain.php:62
+#: gd-system-plugin/includes/class-change-domain.php:84
+#: gd-system-plugin/includes/class-change-domain.php:150
+#: gd-system-plugin/includes/class-change-domain.php:162
+#: gd-system-plugin/includes/class-temp-domain.php:117
+#: gd-system-plugin/includes/class-temp-domain.php:125
+msgid "Note:"
+msgstr "Nota:"
+
+#: gd-system-plugin/includes/class-change-domain.php:73
+#: gd-system-plugin/includes/class-temp-domain.php:136
+msgid "Change domain"
+msgstr "Alterar domínio"
+
+#: gd-system-plugin/includes/class-change-domain.php:83
+#: gd-system-plugin/includes/class-change-domain.php:149
+#. translators: Title of alert in bold
+msgid "%s This is your staging site and the domain cannot be changed."
+msgstr "%s Este é o seu sítio de produção, não sendo possível alterar o domínio."
+
+#: gd-system-plugin/includes/class-debug-mode.php:516
+msgid "Debugger - Safe Mode"
+msgstr "Depurador - Modo de Segurança"
+
+#: gd-system-plugin/includes/class-debug-mode.php:532
+msgid "Themes"
+msgstr "Temas"
+
+#: gd-system-plugin/includes/class-debug-mode.php:540
+msgid "Safe mode"
+msgstr "Modo de segurança"
+
+#: gd-system-plugin/includes/class-debug-mode.php:556
+#. translators: total number of themes installed.
+msgid "Installed (%d)"
+msgstr "(%d) instalado"
+
+#: gd-system-plugin/includes/class-debug-mode.php:559
+msgid "Select one"
+msgstr "Selecione um"
+
+#: gd-system-plugin/includes/class-debug-mode.php:577
+msgid "Plugins"
+msgstr "Plugins"
+
+#: gd-system-plugin/includes/class-debug-mode.php:584
+msgid "Active"
+msgstr "Ativo"
+
+#: gd-system-plugin/includes/class-debug-mode.php:585
+msgid "Inactive"
+msgstr "Inativo"
+
+#: gd-system-plugin/includes/class-debug-mode.php:603
+msgid "Preview"
+msgstr "Pré-visualização"
+
+#: gd-system-plugin/includes/class-debug-mode.php:625
+msgid "No active plugins."
+msgstr "Sem suplementos ativos."
+
+#: gd-system-plugin/includes/class-debug-mode.php:625
+msgid "No inactive plugins."
+msgstr "Sem suplementos inativos."
+
+#: gd-system-plugin/includes/class-hotfixes.php:219
+msgid "Media Temple"
+msgstr "Media Temple"
+
+#: gd-system-plugin/includes/class-sso.php:130
+msgid ""
+"We were unable to log you in automatically. Please enter your WordPress "
+"username and password."
+msgstr ""
+"Não nos foi possível iniciar a sua sessão automaticamente. Introduza o seu "
+"nome de utilizador e a respetiva palavra-passe do WordPress."
+
+#: gd-system-plugin/includes/class-temp-domain.php:45
+#. translators: 1: Current domain. 2: Domain name change URL.
+msgid ""
+"<strong>Note:</strong> You're using the temporary domain "
+"<strong>%1$s</strong>. <a href=\"%2$s\" target=\"_blank\">Change domain</a>"
+msgstr ""
+"<strong>Observação:</strong> está a utilizar o domínio temporário "
+"<strong>%1$s</strong>. <a href=\"%2$s\" target=\"_blank\">Alterar domínio</a>"
+
+#: gd-system-plugin/includes/class-temp-domain.php:116
+#. translators: 1: "Note:" wrapped in strong tags
+msgid "%s This is your staging site and it cannot be indexed by search engines."
+msgstr "%s Este é o seu sítio de produção. O mesmo não pode ser indexado pelos motores de busca."
+
+#: gd-system-plugin/includes/class-temp-domain.php:124
+#. translators: 1: "Note:" wrapped in strong tags
+msgid ""
+"%s Your site is using a temporary domain that cannot be indexed by search "
+"engines."
+msgstr ""
+"%s O seu sítio está a utilizar um domínio temporário que não pode ser "
+"indexado pelos motores de busca."
+
+#: gd-system-plugin/includes/class-woocommerce.php:51
+msgid "Every Fifteen Minutes"
+msgstr "A cada 15 minutos"
+
+#: gd-system-plugin/includes/class-worker.php:117
+msgid ""
+"This is already included as a must-use plugin on your site and is required "
+"for backups and other important hosting platform benefits to function "
+"properly. It cannot be removed or deactivated. It should not be installed "
+"as a normal plugin and will be automatically removed if uploaded manually."
+msgstr ""
+"Já está incluído como um suplemento obrigatório no seu site e é necessário "
+"para que as cópias de segurança e outros benefícios importantes da plataforma "
+"de alojamento funcionem corretamente. Não pode ser removido nem desativado. "
+"Não deve ser instalado como um suplemento normal e será removido "
+"automaticamente se for carregado manualmente."
+
+#: gd-system-plugin/includes/log/components/class-beaverbuilder.php:75
+#. translators: 2. singular post type name (e.g. page), 1. post title
+msgid "Beaver Builder %2$s \"%1$s\" drafted"
+msgstr "Beaver Builder %2$s - Rascunho de «%1$s» criado"
+
+#: gd-system-plugin/includes/log/components/class-beaverbuilder.php:99
+#. translators: 2. singular post type name (e.g. page), 1. post title
+msgid "Beaver Builder %2$s \"%1$s\" discarded"
+msgstr "Beaver Builder %2$s - «%1$s» descartado"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:25
+msgid "Background Attachment"
+msgstr "Anexo do fundo"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:26
+msgid "Background Color"
+msgstr "Cor de fundo"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:27
+msgid "Background Image"
+msgstr "Imagem de fundo"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:28
+msgid "Background Position"
+msgstr "Posição do fundo"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:29
+msgid "Background Repeat"
+msgstr "Repetição do fundo"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:30
+msgid "Base Color Scheme"
+msgstr "Esquema de cores de base"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:31
+msgid "Logo"
+msgstr "Logótipo"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:32
+msgid "Header and Sidebar Background Color"
+msgstr "Cor do fundo do cabeçalho e da barra lateral"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:33
+msgid "Header Image"
+msgstr "Imagem do cabeçalho"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:34
+msgid "Display Site Title and Tagline"
+msgstr "Apresentar título e slogan do sítio"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:35
+msgid "Header Text Color"
+msgstr "Cor do texto do cabeçalho"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:36
+msgid "Link Color"
+msgstr "Cor das hiperligações"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:37
+msgid "Main Text Color"
+msgstr "Cor do texto principal"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:38
+msgid "Page Background Color"
+msgstr "Cor do fundo das páginas"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:39
+msgid "Secondary Text Color"
+msgstr "Cor do texto secundária"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:40
+msgid "Header and Sidebar Text Color"
+msgstr "Cor do texto do cabeçalho e da barra lateral"
+
+#: gd-system-plugin/includes/log/components/class-customizer.php:93
+#. translators: 1. Option name, 2. Theme name
+msgid "\"%1$s\" updated for the %2$s theme"
+msgstr "\"%1$s\" atualizado para o tema %2$s"
+
+#: gd-system-plugin/includes/log/components/class-option.php:28
+msgid "Site Title"
+msgstr "Título do sítio"
+
+#: gd-system-plugin/includes/log/components/class-option.php:29
+msgid "Tagline"
+msgstr "Slogan"
+
+#: gd-system-plugin/includes/log/components/class-option.php:30
+msgid "Posts page"
+msgstr "Página das publicações"
+
+#: gd-system-plugin/includes/log/components/class-option.php:31
+msgid "Front page"
+msgstr "Página principal"
+
+#: gd-system-plugin/includes/log/components/class-option.php:32
+msgid "Front page displays"
+msgstr "Apresentações da página principal"
+
+#: gd-system-plugin/includes/log/components/class-option.php:33
+msgid "Site Icon"
+msgstr "Ícone do sítio"
+
+#: gd-system-plugin/includes/log/components/class-option.php:34
+msgid "Site Language"
+msgstr "Idioma do sítio"
+
+#: gd-system-plugin/includes/log/components/class-option.php:79
+#. translators: Option name
+msgid "\"%s\" option updated"
+msgstr "Opção \"%s\" atualizada"
+
+#: gd-system-plugin/includes/log/components/class-plugin.php:29
+#. translators: Plugin name
+msgid "\"%s\" plugin activated"
+msgstr "Suplemento \"%s\" ativado"
+
+#: gd-system-plugin/includes/log/components/class-plugin.php:36
+#. translators: Plugin name
+msgid "\"%s\" plugin activated network wide"
+msgstr "Suplemento \"%s\" ativado em toda a rede"
+
+#: gd-system-plugin/includes/log/components/class-plugin.php:61
+#. translators: Plugin name
+msgid "\"%s\" plugin deactivated"
+msgstr "Suplemento \"%s\" desativado"
+
+#: gd-system-plugin/includes/log/components/class-plugin.php:68
+#. translators: Plugin name
+msgid "\"%s\" plugin deactivated network wide"
+msgstr "Suplemento \"%s\" desativado em toda a rede"
+
+#: gd-system-plugin/includes/log/components/class-plugin.php:95
+#. translators: Plugin name
+msgid "\"%s\" plugin deleted"
+msgstr "Suplemento \"%s\" eliminado"
+
+#: gd-system-plugin/includes/log/components/class-plugin.php:191
+#. translators: Plugin name
+msgid "\"%s\" plugin installed"
+msgstr "Suplemento \"%s\" instalado"
+
+#: gd-system-plugin/includes/log/components/class-plugin.php:226
+#. translators: 1: Plugin name, 2: New plugin version
+msgid "\"%1$s\" plugin updated to %2$s"
+msgstr "Suplemento \"%1$s\" atualizado para %2$s"
+
+#: gd-system-plugin/includes/log/components/class-plugin.php:233
+#. translators: 1: Plugin name, 2: Old plugin version, 3: New plugin version
+msgid "\"%1$s\" plugin updated from %2$s to %3$s"
+msgstr "Suplemento \"%1$s\" atualizado de %2$s para %3$s"
+
+#: gd-system-plugin/includes/log/components/class-post.php:49
+#: gd-system-plugin/includes/log/components/class-post.php:57
+#. translators: 1: Post title, 2: Post type singular name
+msgid "\"%1$s\" %2$s updated"
+msgstr "\"%1$s\" %2$s atualizado"
+
+#: gd-system-plugin/includes/log/components/class-post.php:66
+#. translators: 1: Post title, 2: Post type singular name
+msgid "\"%1$s\" %2$s created"
+msgstr "\"%1$s\" %2$s criado"
+
+#: gd-system-plugin/includes/log/components/class-post.php:75
+#. translators: 1: Post title, 2: Post type singular name
+msgid "\"%1$s\" %2$s restored from trash"
+msgstr "\"%1$s\" %2$s restaurado da reciclagem"
+
+#: gd-system-plugin/includes/log/components/class-post.php:83
+#. translators: 1: Post title, 2: Post type singular name
+msgid "\"%1$s\" %2$s unpublished"
+msgstr "\"%1$s\" %2$s não publicado"
+
+#: gd-system-plugin/includes/log/components/class-post.php:91
+#. translators: 1: Post title, 2: Post type singular name
+msgid "\"%1$s\" %2$s drafted"
+msgstr "\"%1$s\" %2$s em rascunho"
+
+#: gd-system-plugin/includes/log/components/class-post.php:99
+#. translators: 1: Post title, 2: Post type singular name
+msgid "\"%1$s\" %2$s pending review"
+msgstr "\"%1$s\" %2$s com revisão pendente"
+
+#: gd-system-plugin/includes/log/components/class-post.php:107
+#. translators: 1: Post title, 2: Post type singular name, 3: Scheduled post
+#. date
+msgid "\"%1$s\" %2$s scheduled for %3$s"
+msgstr "\"%1$s\" %2$s agendado para %3$s"
+
+#: gd-system-plugin/includes/log/components/class-post.php:115
+#. translators: 1: Post title, 2: Post type singular name
+msgid "\"%1$s\" scheduled %2$s published"
+msgstr "\"%1$s\" agendado; %2$s publicado"
+
+#: gd-system-plugin/includes/log/components/class-post.php:123
+#. translators: 1: Post title, 2: Post type singular name
+msgid "\"%1$s\" %2$s published"
+msgstr "\"%1$s\" %2$s publicado"
+
+#: gd-system-plugin/includes/log/components/class-post.php:131
+#. translators: 1: Post title, 2: Post type singular name
+msgid "\"%1$s\" %2$s privately published"
+msgstr "\"%1$s\" %2$s publicado em privado"
+
+#: gd-system-plugin/includes/log/components/class-post.php:140
+#. translators: 1: Post title, 2: Post type singular name
+msgid "\"%1$s\" %2$s trashed"
+msgstr "\"%1$s\" %2$s enviado para a reciclagem"
+
+#: gd-system-plugin/includes/log/components/class-theme.php:49
+#. translators: Theme name.
+msgid "\"%s\" theme activated"
+msgstr "Tema \"%s\" ativado"
+
+#: gd-system-plugin/includes/log/components/class-theme.php:118
+#. translators: Theme name.
+msgid "\"%s\" theme installed"
+msgstr "Tema \"%s\" instalado"
+
+#: gd-system-plugin/includes/log/components/class-theme.php:154
+#. translators: 1: Theme name, 2: New theme version
+msgid "\"%1$s\" theme updated to %2$s"
+msgstr "Tema \"%1$s\" atualizado para %2$s"
+
+#: gd-system-plugin/includes/log/components/class-theme.php:161
+#. translators: 1: Theme name, 2: Old theme version, 3: New theme version
+msgid "\"%1$s\" theme updated from %2$s to %3$s"
+msgstr "Tema \"%1$s\" atualizado de %2$s para %3$s"
+
+#: gd-system-plugin/includes/log/components/class-user.php:102
+#. translators: 1. User display name, 2. User role
+msgid "%1$s's user account deleted (%2$s)"
+msgstr "Conta de utilizador de %1$s eliminada (%2$s)"
+
+#: gd-system-plugin/includes/log/components/class-user.php:141
+#. translators: User display name
+msgid "%s's user profile updated"
+msgstr "Perfil de utilizador de %s atualizado"
+
+#: gd-system-plugin/includes/log/components/class-user.php:183
+#. translators: 1: User display name, 2: Old role, 3: New role
+msgid "%1$s's role changed from %2$s to %3$s"
+msgstr "Função de %1$s alterada de %2$s para %3$s"
+
+#: gd-system-plugin/includes/log/components/class-user.php:228
+#. translators: User display name
+msgid "%s logged in"
+msgstr "%s iniciou uma sessão"
+
+#: gd-system-plugin/includes/log/components/class-user.php:261
+#. translators: User display name
+msgid "%s logged out"
+msgstr "%s terminou a sessão"
+
+#: gd-system-plugin/includes/log/components/class-user.php:295
+#. translators: User display name
+msgid "%s requested a password reset"
+msgstr "%s solicitou um restabelecimento de palavra-passe"
+
+#: gd-system-plugin/includes/log/components/class-user.php:327
+#. translators: User display name
+msgid "%s's password reset"
+msgstr "restabelecimento da palavra-passe de %s"
+
+#: gd-system-plugin/includes/log/components/trait-post-helpers.php:85
+msgid "Post"
+msgstr "Publicar"
+
+#: gd-system-plugin/includes/log/components/trait-post-helpers.php:149
+msgid "M j, Y @ H:i"
+msgstr "M j, Y @ H:i"
+
+#: gd-system-plugin.php:141
+msgid "Note: This is a staging site."
+msgstr "Nota: Este é um sítio de transição."
+
+#. Plugin Name of the plugin/theme
+msgid "System Plugin"
+msgstr "Suplemento do sistema"
+
+#: gd-system-plugin/includes/admin/class-dashboard-widgets.php:59
+msgctxt "The name of our company blog found at https://www.godaddy.com/garage"
+msgid "GoDaddy Garage"
+msgstr "GoDaddy Garage (Garagem da GoDaddy)"
+
+#: gd-system-plugin/includes/class-worker.php:112
+msgctxt "plugin"
+msgid "Active"
+msgstr "Ativo"

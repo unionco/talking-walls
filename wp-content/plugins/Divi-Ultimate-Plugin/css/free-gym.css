@@ -1,0 +1,80 @@
+/* ========= */
+/* Gym Theme */
+/* ========= */
+
+.free-gym .free-header h1, .free-gym .free-header h1 span,
+    .free-gym .free-header h2, .free-gym .free-header h2 span,
+        .free-gym .free-header h3, .free-gym .free-header h3 span,
+            .free-gym .free-header h4, .free-gym .free-header h4 span,
+				.free-gym .free-header h5, .free-gym .free-header h5 span,
+					.free-gym .free-header h6, .free-gym .free-header h6 span {
+    font-size: 50px!important;
+    color: #222;
+    letter-spacing: 2px;
+}
+
+.free-gym .free-header-small h1, .free-gym .free-header-small h1 span,
+	.free-gym .free-header-small h2, .free-gym .free-header-small h2 span,
+		.free-gym .free-header-small h3, .free-gym .free-header-small h3 span,
+			.free-gym .free-header-small h4, .free-gym .free-header-small h4 span,
+				.free-gym .free-header-small h5, .free-gym .free-header-small h5 span,
+					.free-gym .free-header-small h6, .free-gym .free-header-small h6 span {
+    font-size: 24px!important;
+    color: #00bcd4;
+    letter-spacing: 2px;
+}
+
+.free-gym .free-header p {
+    margin-top: 30px;
+}
+
+.free-gym .free-header p.et-fb-mce-line-break-holder {
+    margin-top: 0;
+}
+
+.free-gym .free-header-border-bottom {
+    display: none!important;
+}
+
+.free-gym .free-testimonial-slider-modern .et-pb-slider-arrows a:hover {
+    background-color: #00bcd4!important;
+    opacity: 0.8;
+}
+
+.free-gym .free-testimonial-slider-modern .free-testimonial-content:after {
+    background-image: url(/wp-content/themes/Divi-Ultimate/images/quote-gym.png)!important;
+}
+
+.free-gym .free-blog-list-1 .entry-title:before {
+    background: #00bcd4!important;
+}
+
+.free-gym .free-blog-list-1 .post-meta:before {
+    color: #00bcd4!important;
+}
+
+@media screen and (max-width: 767px) {
+    .free-gym .free-header h1, .free-gym .free-header h1 span,
+        .free-gym .free-header h2, .free-gym .free-header h2 span,
+            .free-gym .free-header h3, .free-gym .free-header h3 span,
+				.free-gym .free-header h4, .free-gym .free-header h4 span,
+					.free-gym .free-header h5, .free-gym .free-header h5 span,
+						.free-gym .free-header h6, .free-gym .free-header h6 span {
+        font-size: 38px!important;
+    }
+}
+
+html.et_fb_preview_active--responsive_preview .free-gym .free-header h1,
+    html.et_fb_preview_active--responsive_preview .free-gym .free-header h1 span,
+         html.et_fb_preview_active--responsive_preview .free-gym .free-header h2, 
+             html.et_fb_preview_active--responsive_preview .free-gym .free-header h2 span,
+                 html.et_fb_preview_active--responsive_preview .free-gym .free-header h3,
+                     html.et_fb_preview_active--responsive_preview .free-gym .free-header h3 span,
+                         html.et_fb_preview_active--responsive_preview .free-gym .free-header h4,
+                             html.et_fb_preview_active--responsive_preview .free-gym .free-header h4 span,
+								 html.et_fb_preview_active--responsive_preview .free-gym .free-header h5,
+									 html.et_fb_preview_active--responsive_preview .free-gym .free-header h5 span,
+										 html.et_fb_preview_active--responsive_preview .free-gym .free-header h6,
+											 html.et_fb_preview_active--responsive_preview .free-gym .free-header h6 span {
+    font-size: 38px!important;
+}

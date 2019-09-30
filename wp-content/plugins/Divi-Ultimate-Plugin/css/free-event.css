@@ -1,0 +1,34 @@
+/* =========== */
+/* Event Theme */
+/* =========== */
+
+.free-event .free-header h1, .free-event .free-header h1 span,
+    .free-event .free-header h2, .free-event .free-header h2 span,
+        .free-event .free-header h3, .free-event .free-header h3 span,
+            .free-event .free-header h4, .free-event .free-header h4 span,
+				.free-event .free-header h5, .free-event .free-header h5 span,
+					.free-event .free-header h6, .free-event .free-header h6 span {
+    font-size: 35px!important;
+}
+
+.free-event .free-header .free-header-border-bottom {
+    height: 1px!important;
+    background-color: rgba(255,255,255,0.25)!important;
+    margin: 35px 0 28px 0!important;
+    width: 100%!important;
+}
+.free-event .free-header.et_pb_bg_layout_light .free-header-border-bottom {
+    background-color: #eaeaea!important;
+}
+
+.free-event .free-header p {
+    font-size: 16px;
+    line-height: 2em;
+}
+
+.free-event .free-social-style-1.et_pb_social_media_follow li a.icon::before {
+    color: #1b1d1f!important;
+}
+.free-event .free-social-style-1.et_pb_social_media_follow li a.icon:hover {
+    background-color: rgba(255,255,255,0.86)!important;
+}

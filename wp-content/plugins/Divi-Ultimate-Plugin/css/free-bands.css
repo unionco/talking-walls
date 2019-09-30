@@ -1,0 +1,83 @@
+/* =========== */
+/* Bands Theme */
+/* =========== */
+
+.free-bands .free-header h1, .free-bands .free-header h1 span,
+    .free-bands .free-header h2, .free-bands .free-header h2 span,
+        .free-bands .free-header h3, .free-bands .free-header h3 span,
+            .free-bands .free-header h4, .free-bands .free-header h4 span,
+				.free-bands .free-header h5, .free-bands .free-header h5 span,
+					.free-bands .free-header h6, .free-bands .free-header h6 span {
+    font-size: 50px!important;
+    color: #222;
+    letter-spacing: 2px;
+}
+
+.free-bands .free-header-small h1, .free-bands .free-header-small h1 span,
+	.free-bands .free-header-small h2, .free-bands .free-header-small h2 span,
+		.free-bands .free-header-small h3, .free-bands  .free-header-small h3 span,
+			.free-bands .free-header-small h4, .free-bands .free-header-small h4 span,
+				.free-bands .free-header-small h5, .free-bands .free-header-small h5 span,
+					.free-bands .free-header-small h6, .free-bands .free-header-small h6 span {
+    font-size: 24px!important;
+    color: #e55050;
+    letter-spacing: 2px;
+    margin-bottom: 3px!important;
+}
+
+.free-bands .free-header-border-bottom {
+    display: none!important;
+}
+
+.free-bands .free-header p {
+    font-size: 16px!important;
+    margin-bottom: 30px!important;
+    letter-spacing: 1px;
+    line-height: 1.75em;
+}
+
+.free-bands .free-header p {
+    margin-top: 23px;
+}
+
+.free-bands .free-header p.et-fb-mce-line-break-holder {
+    margin-top: 0;
+}
+
+.free-bands .free-gradient-background {
+    background-color: transparent!important;
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjEwMCUiIHgyPSIwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjMTkxODI4IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiMwMzYwNzgiIHN0b3Atb3BhY2l0eT0iMCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+    background-image: -webkit-gradient(linear, 0% 100%, 0% 0%,color-stop(0, rgb(0, 0, 0)),color-stop(1, transparent));
+    /* Android 2.3 */
+    background-image: -webkit-linear-gradient(bottom,rgb(0, 0, 0) 0%,transparent 100%);
+    /* IE10+ */
+    background-image: linear-gradient(to top,rgb(0, 0, 0) 0%,transparent 100%);
+    background-image: -ms-linear-gradient(bottom,rgb(0, 0, 0) 0%,transparent 100%);
+}
+
+@media screen and (max-width: 767px) {
+    .free-bands .free-header h1, .free-bands .free-header h1 span,
+        .free-bands .free-header h2, .free-bands .free-header h2 span,
+            .free-bands .free-header h3, .free-bands .free-header h3 span,
+				.free-bands .free-header h4, .free-bands .free-header h4 span,
+					.free-bands .free-header h5, .free-bands .free-header h5 span,
+						.free-bands .free-header h6, .free-bands .free-header h6 span {
+        font-size: 38px!important;
+    }
+}
+
+html.et_fb_preview_active--responsive_preview .free-bands .free-header h1,
+    html.et_fb_preview_active--responsive_preview .free-bands .free-header h1 span,
+         html.et_fb_preview_active--responsive_preview .free-bands .free-header h2, 
+             html.et_fb_preview_active--responsive_preview .free-bands .free-header h2 span,
+                 html.et_fb_preview_active--responsive_preview .free-bands .free-header h3,
+                     html.et_fb_preview_active--responsive_preview .free-bands .free-header h3 span,
+                         html.et_fb_preview_active--responsive_preview .free-bands .free-header h4,
+                             html.et_fb_preview_active--responsive_preview .free-bands .free-header h4 span,
+								 html.et_fb_preview_active--responsive_preview .free-bands .free-header h5,
+									 html.et_fb_preview_active--responsive_preview .free-bands .free-header h5 span,
+										 html.et_fb_preview_active--responsive_preview .free-bands .free-header h6,
+											 html.et_fb_preview_active--responsive_preview .free-bands .free-header h6 span {
+    font-size: 38px!important;
+}

@@ -1,0 +1,38 @@
+/* ================== */
+/* Construction Theme */
+/* ================== */
+
+.free-construction .free-header h1, .free-construction .free-header h1 span,
+    .free-construction .free-header h2, .free-construction .free-header h2 span,
+        .free-construction .free-header h3, .free-construction .free-header h3 span,
+            .free-construction .free-header h4, .free-construction .free-header h4 span,
+				.free-construction .free-header h5, .free-construction .free-header h5 span,
+					.free-construction .free-header h6, .free-construction .free-header h6 span	{
+    font-size: 36px!important;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.free-construction .free-header-border-bottom {
+    height: 3px!important;
+    background-color: #fbcf00!important;
+}
+
+.free-construction .free-process-grid-number-color h4:before {
+    color: #fbcf00!important;
+}
+
+.free-construction .free-blog-list-1 .entry-title:before {
+    background: #fbcf00!important;
+}
+
+.free-construction .free-blog-list-1 .post-meta:before {
+    color: #fbcf00!important;
+}
+
+.free-construction .free-header .et_pb_promo_description, .free-construction .free-header .et_pb_fullwidth_header_container {
+    line-height: 1.6;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}

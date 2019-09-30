@@ -1,0 +1,88 @@
+/* ================ */
+/* Restaurant Theme */
+/* ================ */
+
+.free-restaurant .free-header h1, .free-restaurant .free-header h1 span,
+    .free-restaurant .free-header h2, .free-restaurant .free-header h2 span,
+        .free-restaurant .free-header h3, .free-restaurant .free-header h3 span,
+            .free-restaurant .free-header h4, .free-restaurant .free-header h4 span,
+				.free-restaurant .free-header h5, .free-restaurant .free-header h5 span,
+					.free-restaurant .free-header h6, .free-restaurant .free-header h6 span	{
+    font-size: 48px!important;
+    letter-spacing: 1px;
+}
+
+.free-restaurant .free-header {
+    position: relative;
+}
+
+.free-restaurant .free-header:before {
+    content: '✻✻✻✻✻';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    color: #9a9998;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.free-restaurant .free-header .et_pb_promo_description {
+    padding-bottom: 32px;
+    margin-bottom: 20px;
+}
+
+.free-restaurant .free-header-top-text {
+    font-family: 'Herr Von Muellerhoff', cursive!important;
+    color: #ffa742;
+    font-size: 90px;
+    margin-bottom: -10px!important;
+    font-weight: 400!important;
+    line-height: .95em!important;
+}
+
+.free-restaurant .free-header-top-text strong {
+    font-weight: 400!important;
+}
+
+.free-restaurant .free-testimonial-slider-modern .et-pb-slider-arrows a:hover {
+    background-color: #ffa742!important;
+}
+
+.free-restaurant .free-testimonial-slider-modern .free-testimonial-content:after {
+    background-image: url(/wp-content/themes/Divi-Ultimate/images/Quote-Restaurant.png);
+}
+
+@media screen and (max-width: 767px) {
+    .free-restaurant .free-header-top-text {
+        font-size: 70px!important;
+        padding-bottom: 3px!important;
+    }
+    .free-restaurant .free-header h1, .free-restaurant .free-header h1 span,
+        .free-restaurant .free-header h2, .free-restaurant .free-header h2 span,
+            .free-restaurant .free-header h3, .free-restaurant .free-header h3 span,
+				.free-restaurant .free-header h4, .free-restaurant .free-header h4 span,
+					.free-restaurant .free-header h5, .free-restaurant .free-header h5 span,
+						.free-restaurant .free-header h6, .free-restaurant .free-header h6 span	{
+        font-size: 35px!important;
+    }
+}
+
+html.et_fb_preview_active--responsive_preview .free-restaurant .free-header-top-text {
+    font-size: 70px!important;
+    padding-bottom: 3px!important;
+}
+html.et_fb_preview_active--responsive_preview .free-restaurant .free-header h1,
+    html.et_fb_preview_active--responsive_preview .free-restaurant .free-header h1 span,
+         html.et_fb_preview_active--responsive_preview .free-restaurant .free-header h2, 
+             html.et_fb_preview_active--responsive_preview .free-restaurant .free-header h2 span,
+                 html.et_fb_preview_active--responsive_preview .free-restaurant .free-header h3,
+                     html.et_fb_preview_active--responsive_preview .free-restaurant .free-header h3 span,
+                         html.et_fb_preview_active--responsive_preview .free-restaurant .free-header h4,
+                             html.et_fb_preview_active--responsive_preview .free-restaurant .free-header h4 span,
+								 html.et_fb_preview_active--responsive_preview .free-restaurant .free-header h5,
+									 html.et_fb_preview_active--responsive_preview .free-restaurant .free-header h5 span,
+										 html.et_fb_preview_active--responsive_preview .free-restaurant .free-header h6,
+											 html.et_fb_preview_active--responsive_preview .free-restaurant .free-header h6 span {
+    font-size: 35px!important;
+}

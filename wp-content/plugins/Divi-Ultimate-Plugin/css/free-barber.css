@@ -1,0 +1,31 @@
+/* ============ */
+/* Barber Theme */
+/* ============ */
+
+.free-barber .free-header h1, .free-barber .free-header h1 span,
+    .free-barber .free-header h2, .free-barber .free-header h2 span,
+        .free-barber .free-header h3, .free-barber .free-header h3 span,
+            .free-barber .free-header h4, .free-barber .free-header h4 span,
+				.free-barber .free-header h5, .free-barber .free-header h5 span,
+					.free-barber .free-header h6, .free-barber .free-header h6 span {
+    font-size: 35px!important;
+}
+
+.free-barber .free-header-top-text {
+    font-size: 12px!important;
+    letter-spacing: 4px;
+    color: #848484;
+    margin-bottom: 8px!important;
+}
+
+.free-barber .et_pb_text {
+     line-height: 1.9em;
+     color: #7b7b7b;
+}
+
+.free-barber .free-testimonial-slider-modern .free-testimonial-content:after {
+    background-image: url(/wp-content/themes/Divi-Ultimate/images/Quote-Right-Filled-barber.png);
+}
+.free-barber .free-testimonial-slider-modern .et-pb-slider-arrows a:hover {
+    background-color: #354bca!important;
+}

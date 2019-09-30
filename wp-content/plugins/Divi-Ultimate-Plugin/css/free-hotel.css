@@ -1,0 +1,75 @@
+/* =========== */
+/* Hotel Theme */
+/* =========== */
+
+.free-hotel .free-header h1, .free-hotel .free-header h1 span,
+    .free-hotel .free-header h2, .free-hotel .free-header h2 span,
+        .free-hotel .free-header h3, .free-hotel .free-header h3 span,
+			.free-hotel .free-header h4, .free-hotel .free-header h4 span,
+				.free-hotel .free-header h5, .free-hotel .free-header h5 span,
+					.free-hotel .free-header h6, .free-hotel .free-header h6 span {
+    font-size: 70px!important;
+    color: #333;
+    letter-spacing: 0px;
+    line-height: 1.2em;
+}
+
+@media screen and (max-width: 980px) {
+    .free-hotel .free-header h1, .free-hotel .free-header h1 span,
+        .free-hotel .free-header h2, .free-hotel .free-header h2 span,
+            .free-hotel .free-header h3, .free-hotel .free-header h3 span,
+				.free-hotel .free-header h4, .free-hotel .free-header h4 span,
+					.free-hotel .free-header h5, .free-hotel .free-header h5 span,
+						.free-hotel .free-header h6, .free-hotel .free-header h6 span {
+        font-size: 38px!important;
+    }
+}
+
+html.et_fb_preview_active--responsive_preview .free-hotel .free-header h1,
+    html.et_fb_preview_active--responsive_preview .free-hotel .free-header h1 span,
+         html.et_fb_preview_active--responsive_preview .free-hotel .free-header h2, 
+             html.et_fb_preview_active--responsive_preview .free-hotel .free-header h2 span,
+                 html.et_fb_preview_active--responsive_preview .free-hotel .free-header h3,
+                     html.et_fb_preview_active--responsive_preview .free-hotel .free-header h3 span,
+                         html.et_fb_preview_active--responsive_preview .free-hotel .free-header h4,
+                             html.et_fb_preview_active--responsive_preview .free-hotel .free-header h4 span,
+								 html.et_fb_preview_active--responsive_preview .free-hotel .free-header h5,
+									 html.et_fb_preview_active--responsive_preview .free-hotel .free-header h5 span,
+										 html.et_fb_preview_active--responsive_preview .free-hotel .free-header h6,
+											 html.et_fb_preview_active--responsive_preview .free-hotel .free-header h6 span {
+    font-size: 38px!important;
+}
+
+.free-hotel .free-header-small h1, .free-hotel .free-header-small h1 span,
+	.free-hotel .free-header-small h2, .free-hotel .free-header-small h2 span,
+		.free-hotel .free-header-small h3, .free-hotel .free-header-small h3 span,
+			.free-hotel .free-header-small h4, .free-hotel .free-header-small h4 span,
+				.free-hotel .free-header-small h5, .free-hotel .free-header-small h5 span,
+					.free-hotel .free-header-small h6, .free-hotel .free-header-small h6 span {
+    color: #E1A134;
+    font-size: 16px!important;
+    letter-spacing: 3px;
+    margin-bottom: 4px!important;
+    line-height: 1.8em;
+}
+.free-hotel .free-header-small .et_pb_promo_description h1, .free-hotel .free-header-small .et_pb_promo_description h1 span,
+	.free-hotel .free-header-small .et_pb_promo_description h2, .free-hotel .free-header-small .et_pb_promo_description h2 span,
+		.free-hotel .free-header-small .et_pb_promo_description h3, .free-hotel .free-header-small .et_pb_promo_description h3 span,
+			.free-hotel .free-header-small .et_pb_promo_description h4, .free-hotel .free-header-small .et_pb_promo_description h4 span,
+				.free-hotel .free-header-small .et_pb_promo_description h5, .free-hotel .free-header-small .et_pb_promo_description h5 span,
+					.free-hotel .free-header-small .et_pb_promo_description h6, .free-hotel .free-header-small .et_pb_promo_description h6 span {
+    font-weight: 400!important;
+}
+
+.free-hotel .free-header-top-text {
+    font-weight: 400!important;
+    color: #9a9ca8;
+    font-size: 16px!important;
+    letter-spacing: 3px;
+    margin-bottom: 32px!important;
+    line-height: 1.8em;
+}
+
+.free-hotel .free-testimonial-slider-modern .et-pb-slider-arrows a:hover {
+    background-color: #E1A134!important;
+}

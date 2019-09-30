@@ -1,0 +1,81 @@
+/* ============= */
+/* Medical Theme */
+/* ============= */
+
+.free-medical .free-header h1, .free-medical .free-header h1 span,
+    .free-medical .free-header h2, .free-medical .free-header h2 span,
+        .free-medical .free-header h3, .free-medical .free-header h3 span,
+            .free-medical .free-header h4, .free-medical .free-header h4 span,
+				.free-medical .free-header h5, .free-medical .free-header h5 span,
+					.free-medical .free-header h6, .free-medical .free-header h6 span {
+    font-size: 50px!important;
+    color: #222;
+    letter-spacing: 2px;
+    line-height: 1.1em;
+}
+
+@media screen and (max-width: 767px) {
+    .free-medical .free-header h1, .free-medical .free-header h1 span,
+        .free-medical .free-header h2, .free-medical .free-header h2 span,
+            .free-medical .free-header h3, .free-medical .free-header h3 span,
+				.free-medical .free-header h4, .free-medical .free-header h4 span,
+					.free-medical .free-header h5, .free-medical .free-header h5 span,
+						.free-medical .free-header h6, .free-medical .free-header h6 span {
+        font-size: 38px!important;
+    }
+}
+
+html.et_fb_preview_active--responsive_preview .free-medical .free-header h1,
+    html.et_fb_preview_active--responsive_preview .free-medical .free-header h1 span,
+         html.et_fb_preview_active--responsive_preview .free-medical .free-header h2, 
+             html.et_fb_preview_active--responsive_preview .free-medical .free-header h2 span,
+                 html.et_fb_preview_active--responsive_preview .free-medical .free-header h3,
+                     html.et_fb_preview_active--responsive_preview .free-medical .free-header h3 span,
+                         html.et_fb_preview_active--responsive_preview .free-medical .free-header h4,
+                             html.et_fb_preview_active--responsive_preview .free-medical .free-header h4 span,
+								 html.et_fb_preview_active--responsive_preview .free-medical .free-header h5,
+									 html.et_fb_preview_active--responsive_preview .free-medical .free-header h5 span,
+										 html.et_fb_preview_active--responsive_preview .free-medical .free-header h6,
+											 html.et_fb_preview_active--responsive_preview .free-medical .free-header h6 span {
+    font-size: 38px!important;
+}
+
+.free-medical .free-header-top-text {
+    color: #222;
+    font-size: 23px;
+    margin-bottom: 6px!important;
+    font-weight: 300!important;
+    line-height: 1.4em!important;
+    letter-spacing: 4px;
+}
+
+.free-medical .free-header p {
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 1.75em;
+    letter-spacing: 1px;
+}
+
+.free-medical .free-header p.et-fb-mce-line-break-holder {
+    margin-top: 0;
+}
+
+.free-medical .free-header-border-bottom {
+    display: none!important;
+}
+
+.free-medical .free-blog-list-1 .entry-title:before {
+    background: #0f6eab!important;
+}
+
+.free-medical .free-blog-list-1 .post-meta:before {
+    color: #0f6eab!important;
+}
+
+.free-medical .free-testimonial-slider-modern .et-pb-slider-arrows a:hover {
+    background-color: #0f6eab!important;
+}
+
+.free-medical .free-testimonial-slider-modern .free-testimonial-content:after {
+    background-image: url(/wp-content/themes/Divi-Ultimate/images/quote-medical.png)!important;
+}
