@@ -1,0 +1,49 @@
+.murals {
+    display: flex;
+    height: 500px;
+}
+
+.murals-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    overflow-y: scroll;
+    padding: 0 30px;
+    widtH: 50%;
+}
+
+.murals-list-item {
+    border-bottom: 1px solid #c2c2c2;
+    display: flex;
+    padding: 30px 0;
+}
+
+.murals-list-item-image {
+    height: 100%;
+    max-height: 170px;
+    max-width: 255px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.murals-list-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.murals-list-item-info a {
+    color: #6600ff;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.murals-list-item-info h3 {
+    font-weight: bold;
+}
+
+.murals-map {
+    height: 100%;
+    width: 50%;
+}
