@@ -1,6 +1,6 @@
 .murals {
     display: flex;
-    height: 500px;
+    height: calc(100vh - 138px);
 }
 
 .murals-list {
@@ -48,6 +48,6 @@
 
 .murals-map {
     height: 100%;
-    max-width: 75%;
-    width: 100%;
+    /* width: 50%; */
+    flex: 1;
 }
