@@ -79,7 +79,7 @@ $table_prefix = 'wp_0ssgcf4x55_';
  */
 define( 'WP_DEBUG', false );
 //define( 'WP_CACHE', true );
-require_once( dirname( __FILE__ ) . '/gd-config.php' );
+// require_once( dirname( __FILE__ ) . '/gd-config.php' );
 define( 'FS_METHOD', 'direct' );
 define( 'FS_CHMOD_DIR', (0705 & ~ umask()) );
 define( 'FS_CHMOD_FILE', (0604 & ~ umask()) );
@@ -94,4 +94,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once( ABSPATH . 'wp-settings.php' );
-

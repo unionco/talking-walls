@@ -1,21 +1,15 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-</IfModule>
+    RewriteEngine On
+    RewriteBase /
 
-# END WordPress
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+    RewriteCond %{REQUEST_URI} ^\/wp-content\/uploads(.*) [NC]
+    RewriteCond %{HTTP_HOST} ^dev\.talkingwallscharlotte\.com$
+    RewriteRule ^(.*)$ http://www.talkingwallscharlotte.com/$1 [R=302,NC,L]
+
+    RewriteRule ^index\.php$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.php [L]
 </IfModule>
 # END WordPress
