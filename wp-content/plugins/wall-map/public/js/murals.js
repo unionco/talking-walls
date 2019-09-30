@@ -249,7 +249,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             lat: 35.2271,
             lng: -80.8431
         },
-        zoom: 12,
+        zoom: 13,
         styles: mapStyle
     });
     var data = JSON.parse(murals.dataset.murals);

@@ -46,6 +46,7 @@ if ($query && count($query->posts) > 0) {
 					echo '<div class="murals-list-item">
 						<div class="murals-list-item-image">
 							<img src="' . $featuredImage . '" />
+							<div class="murals-"><span></span> 2019</div>
 						</div>
 						<div class="murals-list-item-info">
 							<h3>' . $title . '</h3>

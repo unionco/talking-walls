@@ -9,7 +9,7 @@
     max-width: 700px;
     overflow-y: scroll;
     padding: 0 30px;
-    widtH: 50%;
+    width: 100%;
 }
 
 .murals-list-item {
@@ -19,9 +19,11 @@
 }
 
 .murals-list-item-image {
-    height: 100%;
-    max-height: 170px;
     max-width: 255px;
+}
+
+.murals-list-item-image img {
+    height: 100%;
     object-fit: cover;
     width: 100%;
 }
@@ -31,6 +33,7 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 30px;
+    min-width: 300px;
 }
 
 .murals-list-item-info a {
@@ -45,5 +48,6 @@
 
 .murals-map {
     height: 100%;
-    width: 50%;
+    max-width: 75%;
+    width: 100%;
 }
