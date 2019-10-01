@@ -70,50 +70,56 @@ if ($query && count($query->posts) > 0) {
 
 						<div class="murals" data-murals='<?php echo json_encode($muralJson); ?>'>
 							<div class="murals-list" data-murals-list>
-								<?php
-									foreach ($muralJson as $mural) {
-										$mural = (object) $mural;
-										$title = $mural->title;
-										$location = $mural->location;
-										$displayAddress = $mural->address;
-										$featuredImage = $mural->image;
-										$business = $mural->business;
-										$artistHasPage = (bool) get_field('artist_has_page', $mural->ID);
-										$directions = "https://www.google.com/maps/dir//" . $location['address'];
-										$year = $mural->year;
-										// $type = get_the_terms($mural->ID, 'type');
-
-										if ($artistHasPage) {
-											$relatedArtist = get_field('related_artist', $mural->ID);
-										} else {
-											$artistName = get_field('artistName', $mural->ID);
-										}
-
-										echo '<div class="murals-list-item">
-											<div class="murals-list-item-inner" data-murals-list-item="'.$mural->ID.'">
-												<div class="murals-list-item-image">
-													<img src="' . $featuredImage . '" />
-													<div class="murals-list-item-tag" data-year="'.$year->slug.'"><span></span> '.$year->name.'</div>
-												</div>';
+								<div class="murals-legend">
+									<div class="murals-legend-item is-current"><span></span> 2019 Murals</div>
+									<div class="murals-legend-item"><span></span> Past Murals</div>
+								</div>
+								<div class="murals-list-inner">
+									<?php
+										foreach ($muralJson as $mural) {
+											$mural = (object) $mural;
+											$title = $mural->title;
+											$location = $mural->location;
+											$displayAddress = $mural->address;
+											$featuredImage = $mural->image;
+											$business = $mural->business;
+											$artistHasPage = (bool) get_field('artist_has_page', $mural->ID);
+											$directions = "https://www.google.com/maps/dir//" . $location['address'];
+											$year = $mural->year;
+											// $type = get_the_terms($mural->ID, 'type');
 
 											if ($artistHasPage) {
-												echo '<div class="murals-list-item-info">
-													<h3>' . $relatedArtist->post_title . '</h3>
-													<p>' . $business . '</p>
-													<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
-													<p><a href="' . get_permalink($relatedArtist->ID) . '">Artist Info</a> <a href="'. $directions .'">Get Directions</a></p>
-												</div>';
+												$relatedArtist = get_field('related_artist', $mural->ID);
 											} else {
-												echo '<div class="murals-list-item-info">
-													<h3>' . $artistName ?? $business . '</h3>
-													<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
-													<p><a href="'. $directions .'">Get Directions</a></p>
-												</div>';
+												$artistName = get_field('artistName', $mural->ID);
 											}
-										echo '</div>
-										</div>';
-									}
-								?>
+
+											echo '<div class="murals-list-item">
+												<div class="murals-list-item-inner" data-murals-list-item="'.$mural->ID.'">
+													<div class="murals-list-item-image">
+														<img src="' . $featuredImage . '" />
+														<div class="murals-list-item-tag" data-year="'.$year->slug.'"><span></span> '.$year->name.'</div>
+													</div>';
+
+												if ($artistHasPage) {
+													echo '<div class="murals-list-item-info">
+														<h3>' . $relatedArtist->post_title . '</h3>
+														<p>' . $business . '</p>
+														<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
+														<p><a href="' . get_permalink($relatedArtist->ID) . '">Artist Info</a> <a href="'. $directions .'">Get Directions</a></p>
+													</div>';
+												} else {
+													echo '<div class="murals-list-item-info">
+														<h3>' . $artistName ?? $business . '</h3>
+														<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
+														<p><a href="'. $directions .'">Get Directions</a></p>
+													</div>';
+												}
+											echo '</div>
+											</div>';
+										}
+									?>
+								</div>
 							</div>
 							<div class="murals-map" data-murals-map></div>
 							<button class="murals-switch" data-murals-switch="Map View">
