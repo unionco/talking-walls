@@ -217,7 +217,7 @@
         padding: 0 15px;
     }
 
-    .murals-list-item {
+    .murals-list-item-inner {
         flex-direction: column;
     }
 
