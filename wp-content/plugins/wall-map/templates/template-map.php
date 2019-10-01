@@ -47,9 +47,9 @@ if ($query && count($query->posts) > 0) {
 
 	<?php if (!$is_page_builder_used) : ?>
 
-		<div class="container">
-			<div id="content-area" class="clearfix">
-				<div id="left-area">
+	<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
 
 				<?php endif; ?>
 
@@ -82,97 +82,86 @@ if ($query && count($query->posts) > 0) {
 									<div class="murals-legend-item is-current"><span></span> 2019 Murals</div>
 									<div class="murals-legend-item"><span></span> Past Murals</div>
 								</div>
-								<?php
-									foreach ($muralJson as $mural) {
-										$mural = (object) $mural;
-										$title = $mural->title;
-										$location = $mural->location;
-										$displayAddress = $mural->address;
-										$featuredImage = $mural->image;
-										$business = $mural->business;
-										$artistHasPage = (bool) get_field('artist_has_page', $mural->ID);
-										$directions = "https://www.google.com/maps/dir//" . $location['address'];
-										$year = $mural->year;
+								<div class="murals-list-inner">
+									<?php
+										foreach ($muralJson as $mural) {
+											$mural = (object) $mural;
+											$title = $mural->title;
+											$location = $mural->location;
+											$displayAddress = $mural->address;
+											$featuredImage = $mural->image;
+											$business = $mural->business;
+											$artistHasPage = (bool) get_field('artist_has_page', $mural->ID);
+											$directions = "https://www.google.com/maps/dir//" . $location['address'];
+											$year = $mural->year;
+											// $type = get_the_terms($mural->ID, 'type');
 
-										if ($artistHasPage) {
-											$relatedArtist = get_field('related_artist', $mural->ID);
-										} else {
-											$artistName = get_field('artistName', $mural->ID);
-										}
+											if ($artistHasPage) {
+												$relatedArtist = get_field('related_artist', $mural->ID);
+											} else {
+												$artistName = get_field('artistName', $mural->ID);
+											}
 
-										echo '<div class="murals-list-item">
-											<div class="murals-list-item-inner" data-murals-list-item="' . $mural->ID . '">
-												<div class="murals-list-item-image">
-													<img src="' . $featuredImage . '" />
-													<div class="murals-list-item-tag" data-year="' . $year->slug . '"><span></span> ' . $year->name . '</div>
-												</div>';
-
-										if ($artistHasPage) {
-											$relatedArtist = get_field('related_artist', $mural->ID);
-										} else {
-											$artistName = get_field('artistName', $mural->ID);
-										}
-
-										echo '<div class="murals-list-item">
-												<div class="murals-list-item-inner" data-murals-list-item="' . $mural->ID . '">
+											echo '<div class="murals-list-item">
+												<div class="murals-list-item-inner" data-murals-list-item="'.$mural->ID.'">
 													<div class="murals-list-item-image">
 														<img src="' . $featuredImage . '" />
-														<div class="murals-list-item-tag" data-year="' . $year->slug . '"><span></span> ' . $year->name . '</div>
+														<div class="murals-list-item-tag" data-year="'.$year->slug.'"><span></span> '.$year->name.'</div>
 													</div>';
 
-										if ($artistHasPage) {
-											echo '<div class="murals-list-item-info">
+												if ($artistHasPage) {
+													echo '<div class="murals-list-item-info">
 														<h3>' . $relatedArtist->post_title . '</h3>
 														<p>' . $business . '</p>
 														<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
-														<p><a href="' . get_permalink($relatedArtist->ID) . '">Artist Info</a> <a href="' . $directions . '">Get Directions</a></p>
+														<p><a href="' . get_permalink($relatedArtist->ID) . '">Artist Info</a> <a href="'. $directions .'">Get Directions</a></p>
 													</div>';
-										} else {
-											echo '<div class="murals-list-item-info">
+												} else {
+													echo '<div class="murals-list-item-info">
 														<h3>' . $artistName ?? $business . '</h3>
 														<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
-														<p><a href="' . $directions . '">Get Directions</a></p>
+														<p><a href="'. $directions .'">Get Directions</a></p>
 													</div>';
-										}
-										echo '</div>
+												}
+											echo '</div>
 											</div>';
-									}
+										}
 									?>
+								</div>
 							</div>
+							<div class="murals-map" data-murals-map></div>
+							<button class="murals-switch" data-murals-switch="Map View">
+								<img class="murals-switch-list" src="<?php echo plugin_dir_url(dirname( __FILE__ ) ) . 'public/img/tw-list.svg'; ?>">
+								<img class="murals-switch-map" src="<?php echo plugin_dir_url(dirname( __FILE__ ) ) . 'public/img/tw-map.svg'; ?>">
+							</button>
 						</div>
-						<div class="murals-map" data-murals-map></div>
-						<button class="murals-switch" data-murals-switch="Map View">
-							<img class="murals-switch-list" src="<?php echo plugin_dir_url(dirname(__FILE__)) . 'public/img/tw-list.svg'; ?>">
-							<img class="murals-switch-map" src="<?php echo plugin_dir_url(dirname(__FILE__)) . 'public/img/tw-map.svg'; ?>">
-						</button>
-				</div>
 
-				<div class="entry-content">
-					<?php
-						the_content();
+						<div class="entry-content">
+							<?php
+								the_content();
 
-						if (!$is_page_builder_used)
-							wp_link_pages(array('before' => '<div class="page-links">' . esc_html__('Pages:', 'Divi'), 'after' => '</div>'));
-						?>
-				</div> <!-- .entry-content -->
+								if (!$is_page_builder_used)
+									wp_link_pages(array('before' => '<div class="page-links">' . esc_html__('Pages:', 'Divi'), 'after' => '</div>'));
+								?>
+						</div> <!-- .entry-content -->
 
-				<?php
-					if (!$is_page_builder_used && comments_open() && 'on' === et_get_option('divi_show_pagescomments', 'false')) comments_template('', true);
-					?>
+						<?php
+							if (!$is_page_builder_used && comments_open() && 'on' === et_get_option('divi_show_pagescomments', 'false')) comments_template('', true);
+							?>
 
-				</article> <!-- .et_pb_post -->
+					</article> <!-- .et_pb_post -->
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
 
-			<?php if (!$is_page_builder_used) : ?>
+				<?php if (!$is_page_builder_used) : ?>
 
-			</div> <!-- #left-area -->
+				</div> <!-- #left-area -->
 
-			<?php get_sidebar(); ?>
-		</div> <!-- #content-area -->
-</div> <!-- .container -->
+				<?php get_sidebar(); ?>
+			</div> <!-- #content-area -->
+		</div> <!-- .container -->
 
-<?php endif; ?>
+	<?php endif; ?>
 
 </div> <!-- #main-content -->
 
