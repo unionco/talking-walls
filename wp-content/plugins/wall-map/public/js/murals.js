@@ -254,7 +254,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
     var data = JSON.parse(murals.dataset.murals);
     console.log(data);
-    
+
     function addMarker(location, map, title) {
         // Add the marker at the clicked location, and add the next-available label
         // from the array of alphabetical characters.
@@ -265,7 +265,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     for (var i = 0; i < data.length; i++) {
-        var latLng = new google.maps.LatLng(data[1],data[0]);
+        var location = data[i].location;
+        var latLng = new google.maps.LatLng(location.lat, location.lng);
         addMarker(latLng, map, data[i].title);
-    }		
+    }
 });
