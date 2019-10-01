@@ -262,19 +262,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
     var data = JSON.parse(murals.dataset.murals);
     var infoWindow = new google.maps.InfoWindow({maxWidth: 'unset'});
 
+    var markerIcon = {
+        path: "M 15,15 m -10, 0 a 10,10 0 1,0 20,0 a 10,10 0 1,0 -20,0",
+        fillColor: '#000000',
+        fillOpacity: 1,
+        anchor: new google.maps.Point(0, 0),
+        strokeColor: '#ffffff',
+        strokeWeight: 2,
+        scale: 1
+    }
+
     function addMarker(location, map, markerData) {
         // console.log(markerData);
         // Add the marker at the clicked location, and add the next-available label
         // from the array of alphabetical characters.
-        var markerIcon = {
-            path: "M 15,15 m -10, 0 a 10,10 0 1,0 20,0 a 10,10 0 1,0 -20,0",
-            fillColor: markerData.year.slug === currentYear ? '#6600ff' : '#000000',
-            fillOpacity: 1,
-            anchor: new google.maps.Point(0,0),
-            strokeColor: '#ffffff',
-            strokeWeight: 2,
-            scale: 1
-        }
+        markerIcon.fillColor = markerData.year.slug === currentYear ? '#6600ff' : '#000000';
 
         var marker = new google.maps.Marker({
             position: location,
@@ -320,6 +322,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 return m.id === id;
             })[0];
             marker.marker.setAnimation(google.maps.Animation.BOUNCE);
+
             setTimeout(() => {
                 marker.marker.setAnimation(null);
             }, 700);
