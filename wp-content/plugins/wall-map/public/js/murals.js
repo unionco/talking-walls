@@ -243,6 +243,7 @@ var mapStyle = [
 
 window.addEventListener('DOMContentLoaded', (event) => {
     var murals = document.querySelector('[data-murals]');
+    var items = murals.querySelectorAll("[data-murals-list-item]");
     var currentYear = "2019";
     var mapEl = murals.querySelector('[data-murals-map]');
     var switchButton = murals.querySelector('[data-murals-switch]');
@@ -262,7 +263,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     var infoWindow = new google.maps.InfoWindow({maxWidth: 'unset'});
 
     function addMarker(location, map, markerData) {
-        console.log(markerData);
+        // console.log(markerData);
         // Add the marker at the clicked location, and add the next-available label
         // from the array of alphabetical characters.
         var markerIcon = {
@@ -274,7 +275,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             strokeWeight: 2,
             scale: 1
         }
-        
+
         var marker = new google.maps.Marker({
             position: location,
             map: map,
@@ -293,28 +294,49 @@ window.addEventListener('DOMContentLoaded', (event) => {
         google.maps.event.addListener(map, 'click', function() {
             infoWindow.close();
         });
-        
+
         bounds.extend(location);
         map.fitBounds(bounds);
+
+        return marker;
     }
 
     // Add markers to map
+    var markers = [];
     for (var i = 0; i < data.length; i++) {
         var location = data[i].location;
         var latLng = new google.maps.LatLng(location.lat, location.lng);
-        addMarker(latLng, map, data[i]);
+        markers.push(Object.assign({}, { id: data[i].ID }, { marker: addMarker(latLng, map, data[i]) }));
     }
 
+    console.log(markers);
 
-    window.addEventListener('resize', () => {
+    for (var i = 0; i < items.length; i++) {
+        const item = items[i];
+        item.addEventListener('mouseenter', function() {
+            // find marker
+            const id = +item.getAttribute('data-murals-list-item');
+            const marker = markers.filter(function(m) {
+                return m.id === id;
+            })[0];
+            marker.marker.setAnimation(google.maps.Animation.BOUNCE);
+            setTimeout(() => {
+                marker.marker.setAnimation(null);
+            }, 700);
+        });
+    }
+
+    window.addEventListener('resize', function() {
         map.fitBounds(bounds);
-    })
+    });
 
-    switchButton.addEventListener('click', () => {
+    switchButton.addEventListener('click', function() {
         murals.classList.toggle('is-map-active');
         switchButton.dataset.muralsSwitch = murals.classList.contains('is-map-active') ? 'List View' : 'Map View';
         map.fitBounds(bounds);
         map.setZoom(map.getZoom() - 2);
         murals.scrollIntoView({behavior: 'smooth'})
     })
+
+
 });
