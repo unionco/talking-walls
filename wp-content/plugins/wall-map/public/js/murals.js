@@ -243,28 +243,38 @@ var mapStyle = [
 
 window.addEventListener('DOMContentLoaded', (event) => {
     var murals = document.querySelector('[data-murals]');
+    var currentYear = "2019";
     var mapEl = murals.querySelector('[data-murals-map]');
     var switchButton = murals.querySelector('[data-murals-switch]');
     var bounds = new google.maps.LatLngBounds();
     var map = new google.maps.Map(mapEl, {
         zoom: 13,
-        styles: mapStyle
+        styles: mapStyle,
+        zoomControl: true,
+        zoomControlOptions: {
+            position: google.maps.ControlPosition.TOP_LEFT
+        },
+        mapTypeControl: false,
+        streetViewControl: false,
+        fullscreenControl: true
     });
     var data = JSON.parse(murals.dataset.murals);
     var infoWindow = new google.maps.InfoWindow({maxWidth: 'unset'});
-    var markerIcon = {
-        path: "M 15,15 m -10, 0 a 10,10 0 1,0 20,0 a 10,10 0 1,0 -20,0",
-        fillColor: '#6600ff',
-        fillOpacity: 1,
-        anchor: new google.maps.Point(0,0),
-        strokeColor: '#ffffff',
-        strokeWeight: 2,
-        scale: 1
-    }
 
     function addMarker(location, map, markerData) {
+        console.log(markerData);
         // Add the marker at the clicked location, and add the next-available label
         // from the array of alphabetical characters.
+        var markerIcon = {
+            path: "M 15,15 m -10, 0 a 10,10 0 1,0 20,0 a 10,10 0 1,0 -20,0",
+            fillColor: markerData.year.slug === currentYear ? '#6600ff' : '#000000',
+            fillOpacity: 1,
+            anchor: new google.maps.Point(0,0),
+            strokeColor: '#ffffff',
+            strokeWeight: 2,
+            scale: 1
+        }
+        
         var marker = new google.maps.Marker({
             position: location,
             map: map,
@@ -295,6 +305,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         addMarker(latLng, map, data[i]);
     }
 
+
     window.addEventListener('resize', () => {
         map.fitBounds(bounds);
     })
@@ -303,6 +314,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         murals.classList.toggle('is-map-active');
         switchButton.dataset.muralsSwitch = murals.classList.contains('is-map-active') ? 'List View' : 'Map View';
         map.fitBounds(bounds);
+        map.setZoom(map.getZoom() - 2);
         murals.scrollIntoView({behavior: 'smooth'})
     })
 });

@@ -14,8 +14,18 @@
 
 .murals-list-item {
     border-bottom: 1px solid #c2c2c2;
+    padding: 14px 0;
+}
+
+.murals-list-item:hover .murals-list-item-inner {
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.murals-list-item-inner {
+    border-radius: 2px;
     display: flex;
-    padding: 30px 0;
+    padding: 10px;
+    transition: box-shadow 0.2s ease;
 }
 
 .murals-list-item-image {
@@ -72,11 +82,15 @@
 }
 
 .murals-list-item-tag span {
-    background: #6600ff;
+    background-color: #000000;
     border-radius: 50%;
     height: 12px;
     margin-right: 6px;
     width: 12px;
+}
+
+.murals-list-item-tag[data-year="2019"] span {
+    background-color: #6600FF;
 }
 
 .murals-map {
@@ -92,7 +106,7 @@
     bottom: 7.5vh;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    display: flex;
+    display: none;
     font-size: 14px;
     font-weight: bold;
     justify-content: center;
@@ -142,18 +156,22 @@
     width: 12px;
 }
 
-.murals-tag[data-year="2018"] span {
-    background-color: #6600FF;
-}
-
 .gm-style-iw .murals-list-item-info {
     font-size: 15px;
     padding-left: 0;
 }
 
+.gm-style-iw .murals-list-item-image {
+    max-width: 300px;
+}
+
 @media screen and (max-width: 980px) {
     .murals {
         height: auto;
+    }
+    
+    .murals-switch {
+        display: flex;
     }
 
     .gm-style-iw {

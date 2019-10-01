@@ -27,7 +27,8 @@ if ($query && count($query->posts) > 0) {
 			"business" => get_field('business_name', $mural->ID),
 			"address" => get_field('display_address', $mural->ID),
 			"location" => get_field('location', $mural->ID),
-			"image" => get_the_post_thumbnail_url($mural->ID, 'medium_large')
+			"image" => get_the_post_thumbnail_url($mural->ID, 'medium_large'),
+			"year" => get_the_terms($mural->ID, 'murals-year')[0]
 		]);
 	}
 }
@@ -79,7 +80,7 @@ if ($query && count($query->posts) > 0) {
 										$business = $mural->business;
 										$artistHasPage = (bool) get_field('artist_has_page', $mural->ID);
 										$directions = "https://www.google.com/maps/dir//" . $location['address'];
-										$year = get_the_terms($mural->ID, 'murals-year')[0];
+										$year = $mural->year;
 										// $type = get_the_terms($mural->ID, 'type');
 
 										if ($artistHasPage) {
@@ -88,27 +89,29 @@ if ($query && count($query->posts) > 0) {
 											$artistName = get_field('artistName', $mural->ID);
 										}
 
-										echo '<div class="murals-list-item" data-murals-list-item="'.$mural->ID.'">
-											<div class="murals-list-item-image">
-												<img src="' . $featuredImage . '" />
-												<div class="murals-list-item-tag" data-year="'.$year->slug.'"><span></span> '.$year->name.'</div>
-											</div>';
+										echo '<div class="murals-list-item">
+											<div class="murals-list-item-inner" data-murals-list-item="'.$mural->ID.'">
+												<div class="murals-list-item-image">
+													<img src="' . $featuredImage . '" />
+													<div class="murals-list-item-tag" data-year="'.$year->slug.'"><span></span> '.$year->name.'</div>
+												</div>';
 
-										if ($artistHasPage) {
-											echo '<div class="murals-list-item-info">
-												<h3>' . $relatedArtist->post_title . '</h3>
-												<p>' . $business . '</p>
-												<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
-												<p><a href="' . get_permalink($relatedArtist->ID) . '">Artist Info</a> <a href="'. $directions .'">Get Directions</a></p>
-											</div>';
-										} else {
-											echo '<div class="murals-list-item-info">
-												<h3>' . $artistName ?? $business . '</h3>
-												<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
-												<p><a href="'. $directions .'">Get Directions</a></p>
-											</div>';
-										}
-										echo '</div>';
+											if ($artistHasPage) {
+												echo '<div class="murals-list-item-info">
+													<h3>' . $relatedArtist->post_title . '</h3>
+													<p>' . $business . '</p>
+													<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
+													<p><a href="' . get_permalink($relatedArtist->ID) . '">Artist Info</a> <a href="'. $directions .'">Get Directions</a></p>
+												</div>';
+											} else {
+												echo '<div class="murals-list-item-info">
+													<h3>' . $artistName ?? $business . '</h3>
+													<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
+													<p><a href="'. $directions .'">Get Directions</a></p>
+												</div>';
+											}
+										echo '</div>
+										</div>';
 									}
 								?>
 							</div>
