@@ -94,6 +94,7 @@ if ($query && count($query->posts) > 0) {
 											$artistHasPage = (bool) get_field('artist_has_page', $mural->ID);
 											$directions = "https://www.google.com/maps/dir//" . $location['address'];
 											$year = $mural->year;
+											$yearColor = $year->slug === $currentYear ? $color : "#000000";
 											// $type = get_the_terms($mural->ID, 'type');
 
 											if ($artistHasPage) {
@@ -106,7 +107,7 @@ if ($query && count($query->posts) > 0) {
 												<div class="murals-list-item-inner" data-murals-list-item="'.$mural->ID.'">
 													<div class="murals-list-item-image">
 														<img src="' . $featuredImage . '" />
-														<div class="murals-list-item-tag" data-year="'.$year->slug.'"><span></span> '.$year->name.'</div>
+														<div class="murals-list-item-tag"><span style="background-color: '.$yearColor.';"></span> '.$year->name.'</div>
 													</div>';
 
 												if ($artistHasPage) {

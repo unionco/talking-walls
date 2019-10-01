@@ -125,7 +125,7 @@
     width: 12px;
 }
 
-.murals-list-item-tag[data-year="2019"] span {
+.murals-list-item-tag[data-year="current"] span {
     background-color: #6600FF;
 }
 
