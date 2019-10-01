@@ -20,6 +20,7 @@
 
 .murals-list-item-image {
     max-width: 255px;
+    position: relative;
 }
 
 .murals-list-item-image img {
@@ -44,6 +45,30 @@
 
 .murals-list-item-info h3 {
     font-weight: bold;
+}
+
+.murals-list-item-tag {
+    align-items: center;
+    background: #ffffff;
+    border-radius: 2px;
+    bottom: 12px;
+    color: #000000;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    height: 22px;
+    left: 12px;
+    padding: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.murals-list-item-tag span {
+    background: #6600ff;
+    border-radius: 50%;
+    height: 12px;
+    margin-right: 6px;
+    width: 12px;
 }
 
 .murals-map {
