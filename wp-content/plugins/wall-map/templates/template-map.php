@@ -7,11 +7,11 @@ get_header();
 
 $is_page_builder_used = et_pb_is_pagebuilder_used(get_the_ID());
 
-$projectJson = [];
-$projects = [];
+$muralJson = [];
+$murals = [];
 
 $args = [
-	'post_type'      => 'project',
+	'post_type'      => 'murals',
 	'orderby'        => 'title',
 	'order'          => 'ASC',
 	'posts_per_page' => -1,
@@ -19,13 +19,18 @@ $args = [
 $query = new WP_Query($args);
 
 if ($query && count($query->posts) > 0) {
-	foreach ($query->posts as $project) {
-		array_push($projects, $project);
-		array_push($projectJson, [
-			"id" => $project->ID,
-			"title" => $project->post_title,
-			"location" => get_field('wall_map', $project->ID),
-			"image" => get_the_post_thumbnail_url($project->ID)
+	foreach ($query->posts as $mural) {
+		// php version
+		array_push($murals, $mural);
+
+		// json version for js
+		array_push($muralJson, [
+			"id" => $mural->ID,
+			"title" => $mural->post_title,
+			"business" => get_field('business_name', $mural->ID),
+			"address" => get_field('display_address', $mural->ID),
+			"location" => get_field('location', $mural->ID),
+			"image" => get_the_post_thumbnail_url($mural->ID)
 		]);
 	}
 }
@@ -65,25 +70,48 @@ if ($query && count($query->posts) > 0) {
 									?>
 						<?php endif; ?>
 
-						<div class="murals" data-murals='<?php echo json_encode($projectJson); ?>'>
+						<div class="murals" data-murals='<?php echo json_encode($muralJson); ?>'>
 							<div class="murals-list" data-murals-list>
 								<?php
-									foreach ($projects as $project) {
-										$title = $project->post_title;
-										$location = get_field('wall_location', $project->ID);
-										$featuredImage = get_the_post_thumbnail_url($project->ID);
+									foreach ($murals as $mural) {
+										$title = $mural->post_title;
+										$location = get_field('location', $mural->ID);
+										$displayAddress = get_field('display_address', $mural->ID);
+										$featuredImage = get_the_post_thumbnail_url($mural->ID);
+										$artistHasPage = (bool) get_field('artist_has_page', $mural->ID);
+										$directions = "https://www.google.com/maps/dir//" . $location['address'];
+										$year = get_the_terms($mural->ID, 'murals-year')[0];
+										// $type = get_the_terms($mural->ID, 'type');
+
+										if ($artistHasPage) {
+											$relatedArtist = get_field('related_artist', $mural->ID);
+										} else {
+											$artistName = get_field('artistName', $mural->ID);
+										}
+
 										echo '<div class="murals-list-item">
-						<div class="murals-list-item-image">
-							<img src="' . $featuredImage . '" />
-						</div>
-						<div class="murals-list-item-info">
-							<h3>' . $title . '</h3>
-							<p>' . ($location ? $location['address'] : 'No Location Set') . '</p>
-							<p><a href="'. get_permalink($project->ID) .'">Artist Info</a> <a href="/">Get Directions</a></p>
-						</div>
-					</div>';
+											<div class="murals-list-item-image">
+												<img src="' . $featuredImage . '" />
+												<div class="murals-tag" data-year="'.$year->slug.'"><span></span> '.$year->name.'</div>
+											</div>';
+
+										if ($artistHasPage) {
+											echo '<div class="murals-list-item-info">
+												<h3>' . $relatedArtist->post_title . '</h3>
+												<p>' . $title . '</p>
+												<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
+												<p><a href="' . get_permalink($relatedArtist->ID) . '">Artist Info</a> <a href="'. $directions .'">Get Directions</a></p>
+											</div>';
+										} else {
+											echo '<div class="murals-list-item-info">
+												<h3>' . $artistName ?? $title . '</h3>
+												<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
+												<p><a href="'. $directions .'">Get Directions</a></p>
+											</div>';
+										}
+										echo '</div>';
 									}
-									?>
+								?>
 							</div>
 							<div class="murals-map" data-murals-map></div>
 						</div>

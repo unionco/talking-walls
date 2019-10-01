@@ -20,6 +20,7 @@
 
 .murals-list-item-image {
     max-width: 255px;
+    position: relative;
 }
 
 .murals-list-item-image img {
@@ -46,8 +47,42 @@
     font-weight: bold;
 }
 
+.murals-list-item-info p {
+    font-size: 15px;
+}
+
+.murals-list-item-info p:first-of-type {
+    font-weight: bold;
+    padding: 0;
+}
+
 .murals-map {
     height: 100%;
     /* width: 50%; */
     flex: 1;
+}
+
+.murals-tag {
+    background: white;
+    border-radius: 2px;
+    bottom: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    font-weight: bold;
+    left: 12px;
+    line-height: 1;
+    padding: 5px 6px;
+    position: absolute;
+}
+
+.murals-tag span {
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    margin-right: 6px;
+    width: 12px;
+}
+
+.murals-tag[data-year="2018"] span {
+    background-color: #6600FF;
 }
