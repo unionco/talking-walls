@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             lat: -34.397,
             lng: 150.644
         },
-        zoom: 8
+        zoom: 20
     });
     var coords = el.dataset.locations;
 
@@ -15,5 +15,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
             position: latLng,
             map: map
         });
-    }		
+    }
 });

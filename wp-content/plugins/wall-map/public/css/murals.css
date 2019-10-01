@@ -1,18 +1,20 @@
 .murals {
     display: flex;
-    height: calc(100vh - 138px);
+    height: calc(100vh - 188px);
 }
 
 .murals-legend {
     align-items: center;
+    background: white;
     box-shadow: 0 4px 2px rgba(0, 0, 0, 0.15);
     display: flex;
     font-weight: bold;
     height: 50px;
     padding: 0px 40px;
-    position: absolute;
+    position: sticky;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 
 .murals-legend span {
@@ -28,6 +30,7 @@
     align-items: center;
     display: flex;
     margin-right: 34px;
+    user-select: none;
 }
 
 .murals-legend-item.is-current span {
@@ -37,7 +40,7 @@
 .murals-list {
     max-width: 700px;
     overflow-y: scroll;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     position: relative;
     width: 100%;
 }
@@ -95,6 +98,7 @@
 
 .murals-list-item-info h3 + p {
     font-weight: bold;
+    padding: 0;
 }
 
 .murals-list-item-info p {
@@ -201,15 +205,17 @@
     max-width: 300px;
 }
 
+.gm-style .gm-style-iw-d {
+    overflow: auto !important;
+}
+
 @media screen and (max-width: 980px) {
     .murals {
         height: auto;
     }
-    
     .murals-switch {
         display: flex;
     }
-
     .gm-style-iw {
         border-radius: 2px !important;
         max-width: 95vw !important;
@@ -217,31 +223,24 @@
         padding-bottom: 24px !important;
         width: 100%;
     }
-
     .gm-style-iw .murals-list-item-image {
         max-width: 100%;
     }
-
     .is-map-active .murals-list-inner {
         display: none;
     }
-
     .is-map-active .murals-map {
         display: block;
     }
-
     .is-map-active .murals-switch-list {
         display: inline;
     }
-
     .is-map-active .murals-switch-map {
         display: none;
     }
-
     .murals-list {
         max-width: 100%;
     }
-
     .murals-map {
         display: none;
         height: 80vh;
@@ -256,16 +255,13 @@
     .murals-list-inner {
         padding: 0 15px;
     }
-
     .murals-list-item-inner {
         flex-direction: column;
     }
-
     .murals-list-item-image {
         margin-bottom: 20px;
         max-width: calc(100% - 12px);
     }
-
     .murals-list-item-info {
         min-width: unset;
         padding-left: 0;
