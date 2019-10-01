@@ -244,28 +244,65 @@ var mapStyle = [
 window.addEventListener('DOMContentLoaded', (event) => {
     var murals = document.querySelector('[data-murals]');
     var mapEl = murals.querySelector('[data-murals-map]');
+    var switchButton = murals.querySelector('[data-murals-switch]');
+    var bounds = new google.maps.LatLngBounds();
     var map = new google.maps.Map(mapEl, {
-        center: {
-            lat: 35.2271,
-            lng: -80.8431
-        },
         zoom: 13,
         styles: mapStyle
     });
     var data = JSON.parse(murals.dataset.murals);
-    console.log(data);
-    
-    function addMarker(location, map, title) {
+    var infoWindow = new google.maps.InfoWindow({maxWidth: 'unset'});
+    var markerIcon = {
+        path: "M 15,15 m -10, 0 a 10,10 0 1,0 20,0 a 10,10 0 1,0 -20,0",
+        fillColor: '#6600ff',
+        fillOpacity: 1,
+        anchor: new google.maps.Point(0,0),
+        strokeColor: '#ffffff',
+        strokeWeight: 2,
+        scale: 1
+    }
+
+    function addMarker(location, map, markerData) {
         // Add the marker at the clicked location, and add the next-available label
         // from the array of alphabetical characters.
         var marker = new google.maps.Marker({
             position: location,
-            map: map
+            map: map,
+            icon: markerIcon
         });
+
+        var muralHTML = document.querySelector('[data-murals-list-item="' + markerData.ID + '"]').innerHTML;
+
+        // infoWindow.querySelector('button').innerHTML = '&times; CLOSE'
+
+        marker.addListener('click', function() {
+            infoWindow.setContent(muralHTML)
+            infoWindow.open(map, marker);
+        });
+
+        google.maps.event.addListener(map, 'click', function() {
+            infoWindow.close();
+        });
+        
+        bounds.extend(location);
+        map.fitBounds(bounds);
     }
 
+    // Add markers to map
     for (var i = 0; i < data.length; i++) {
-        var latLng = new google.maps.LatLng(data[1],data[0]);
-        addMarker(latLng, map, data[i].title);
-    }		
+        var location = data[i].location;
+        var latLng = new google.maps.LatLng(location.lat, location.lng);
+        addMarker(latLng, map, data[i]);
+    }
+
+    window.addEventListener('resize', () => {
+        map.fitBounds(bounds);
+    })
+
+    switchButton.addEventListener('click', () => {
+        murals.classList.toggle('is-map-active');
+        switchButton.dataset.muralsSwitch = murals.classList.contains('is-map-active') ? 'List View' : 'Map View';
+        map.fitBounds(bounds);
+        murals.scrollIntoView({behavior: 'smooth'})
+    })
 });

@@ -1,6 +1,6 @@
 .murals {
     display: flex;
-    height: 500px;
+    height: calc(100vh - 138px);
 }
 
 .murals-list {
@@ -47,6 +47,14 @@
     font-weight: bold;
 }
 
+.murals-list-item-info h3 + p {
+    font-weight: bold;
+}
+
+.murals-list-item-info p {
+    font-size: 15px;
+}
+
 .murals-list-item-tag {
     align-items: center;
     background: #ffffff;
@@ -73,6 +81,135 @@
 
 .murals-map {
     height: 100%;
-    max-width: 75%;
-    width: 100%;
+    /* width: 50%; */
+    flex: 1;
+}
+
+.murals-switch {
+    align-items: center;
+    background: #ffffff;
+    border: none;
+    bottom: 7.5vh;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: center;
+    left: 50%;
+    padding: 10px;
+    position: fixed;
+    transform: translateX(-50%);
+    transition: background 0.2s ease;
+    width: 145px;
+}
+
+.murals-switch::after {
+    content: attr(data-murals-switch);
+}
+
+.murals-switch:hover {
+    background: #ededed;
+}
+
+.murals-switch img {
+    margin-right: 10px;
+}
+
+.murals-switch-list {
+    display: none;
+}
+
+.murals-tag {
+    background: white;
+    border-radius: 2px;
+    bottom: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    font-weight: bold;
+    left: 12px;
+    line-height: 1;
+    padding: 5px 6px;
+    position: absolute;
+}
+
+.murals-tag span {
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    margin-right: 6px;
+    width: 12px;
+}
+
+.murals-tag[data-year="2018"] span {
+    background-color: #6600FF;
+}
+
+.gm-style-iw .murals-list-item-info {
+    font-size: 15px;
+    padding-left: 0;
+}
+
+@media screen and (max-width: 980px) {
+    .murals {
+        height: auto;
+    }
+
+    .gm-style-iw {
+        border-radius: 2px !important;
+        max-width: 95vw !important;
+        padding: 12px !important;
+        padding-bottom: 24px !important;
+        width: 100%;
+    }
+
+    .gm-style-iw .murals-list-item-image {
+        max-width: 100%;
+    }
+
+    .is-map-active .murals-list {
+        display: none;
+    }
+
+    .is-map-active .murals-map {
+        display: block;
+    }
+
+    .is-map-active .murals-switch-list {
+        display: inline;
+    }
+
+    .is-map-active .murals-switch-map {
+        display: none;
+    }
+
+    .murals-list {
+        max-width: 100%;
+    }
+
+    .murals-map {
+        display: none;
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .murals-list {
+        padding: 0 15px;
+    }
+
+    .murals-list-item {
+        flex-direction: column;
+    }
+
+    .murals-list-item-image {
+        margin-bottom: 20px;
+        max-width: calc(100% - 12px);
+    }
+
+    .murals-list-item-info {
+        min-width: unset;
+        padding-left: 0;
+    }
 }
