@@ -114,13 +114,13 @@ if ($query && count($query->posts) > 0) {
 														<h3>' . $relatedArtist->post_title . '</h3>
 														<p>' . $business . '</p>
 														<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
-														<p><a href="' . get_permalink($relatedArtist->ID) . '">Artist Info</a> <a href="' . $directions . '">Get Directions</a></p>
+														<p><a href="' . get_permalink($relatedArtist->ID) . '">Artist Info</a> <a href="' . $directions . '" target="_blank" rel="noopener noreferrer">Get Directions</a></p>
 													</div>';
 											} else {
 												echo '<div class="murals-list-item-info">
 														<h3>' . ($artistName ? $artistName : $business) . '</h3>
 														<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
-														<p><a href="' . $directions . '">Get Directions</a></p>
+														<p><a href="' . $directions . '" target="_blank" rel="noopener noreferrer">Get Directions</a></p>
 													</div>';
 											}
 											echo '</div>
