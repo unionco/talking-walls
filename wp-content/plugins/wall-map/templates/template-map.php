@@ -47,9 +47,9 @@ if ($query && count($query->posts) > 0) {
 
 	<?php if (!$is_page_builder_used) : ?>
 
-	<div class="container">
-		<div id="content-area" class="clearfix">
-			<div id="left-area">
+		<div class="container">
+			<div id="content-area" class="clearfix">
+				<div id="left-area">
 
 				<?php endif; ?>
 
@@ -76,10 +76,10 @@ if ($query && count($query->posts) > 0) {
 									?>
 						<?php endif; ?>
 
-						<div class="murals" data-murals='<?php echo json_encode($muralJson); ?>'>
+						<div class="murals" data-current-year="<?php echo $currentYear; ?>" data-murals='<?php echo json_encode($muralJson); ?>'>
 							<div class="murals-list" data-murals-list>
 								<div class="murals-legend">
-									<div class="murals-legend-item is-current"><span></span> 2019 Murals</div>
+									<div class="murals-legend-item is-current"><span></span> <?php echo $currentYear; ?> Murals</div>
 									<div class="murals-legend-item"><span></span> Past Murals</div>
 								</div>
 								<div class="murals-list-inner">
@@ -103,36 +103,36 @@ if ($query && count($query->posts) > 0) {
 											}
 
 											echo '<div class="murals-list-item">
-												<div class="murals-list-item-inner" data-murals-list-item="'.$mural->ID.'">
+												<div class="murals-list-item-inner" data-murals-list-item="' . $mural->ID . '">
 													<div class="murals-list-item-image">
 														<img src="' . $featuredImage . '" />
-														<div class="murals-list-item-tag"><span style="background-color: '.$yearColor.';"></span> '.$year->name.'</div>
+														<div class="murals-list-item-tag"><span style="background-color: ' . $yearColor . ';"></span> ' . $year->name . '</div>
 													</div>';
 
-												if ($artistHasPage) {
-													echo '<div class="murals-list-item-info">
+											if ($artistHasPage) {
+												echo '<div class="murals-list-item-info">
 														<h3>' . $relatedArtist->post_title . '</h3>
 														<p>' . $business . '</p>
 														<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
-														<p><a href="' . get_permalink($relatedArtist->ID) . '">Artist Info</a> <a href="'. $directions .'">Get Directions</a></p>
+														<p><a href="' . get_permalink($relatedArtist->ID) . '">Artist Info</a> <a href="' . $directions . '">Get Directions</a></p>
 													</div>';
-												} else {
-													echo '<div class="murals-list-item-info">
+											} else {
+												echo '<div class="murals-list-item-info">
 														<h3>' . ($artistName ? $artistName : $business) . '</h3>
 														<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
-														<p><a href="'. $directions .'">Get Directions</a></p>
+														<p><a href="' . $directions . '">Get Directions</a></p>
 													</div>';
-												}
+											}
 											echo '</div>
 											</div>';
 										}
-									?>
+										?>
 								</div>
 							</div>
 							<div class="murals-map" data-murals-map></div>
 							<button class="murals-switch" data-murals-switch="Map View">
-								<img class="murals-switch-list" src="<?php echo plugin_dir_url(dirname( __FILE__ ) ) . 'public/img/tw-list.svg'; ?>">
-								<img class="murals-switch-map" src="<?php echo plugin_dir_url(dirname( __FILE__ ) ) . 'public/img/tw-map.svg'; ?>">
+								<img class="murals-switch-list" src="<?php echo plugin_dir_url(dirname(__FILE__)) . 'public/img/tw-list.svg'; ?>">
+								<img class="murals-switch-map" src="<?php echo plugin_dir_url(dirname(__FILE__)) . 'public/img/tw-map.svg'; ?>">
 							</button>
 						</div>
 

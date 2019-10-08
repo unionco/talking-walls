@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     var murals = document.querySelector('[data-murals]');
     if (murals) {
         var items = murals.querySelectorAll("[data-murals-list-item]");
-        var currentYear = "2019";
+        var currentYear = murals.getAttribute('data-current-year');
         var mapEl = murals.querySelector('[data-murals-map]');
         var switchButton = murals.querySelector('[data-murals-switch]');
         var bounds = new google.maps.LatLngBounds();
@@ -30,6 +30,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
             scale: 1
         }
 
+        // default to map if mobile
+        if (window.outerWidth <= 768) {
+            murals.classList.toggle('is-map-active');
+            switchButton.dataset.muralsSwitch = murals.classList.contains('is-map-active') ? 'List View' : 'Map View';
+        }
+
         function addMarker(location, map, markerData) {
             // console.log(markerData);
             // Add the marker at the clicked location, and add the next-available label
@@ -43,8 +49,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             });
 
             var muralHTML = document.querySelector('[data-murals-list-item="' + markerData.ID + '"]').innerHTML;
-
-            // infoWindow.querySelector('button').innerHTML = '&times; CLOSE'
 
             marker.addListener('click', function() {
                 infoWindow.setContent(muralHTML)
@@ -68,8 +72,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             var latLng = new google.maps.LatLng(location.lat, location.lng);
             markers.push(Object.assign({}, { id: data[i].ID }, { marker: addMarker(latLng, map, data[i]) }));
         }
-
-        console.log(markers);
 
         for (var i = 0; i < items.length; i++) {
             const item = items[i];
@@ -95,7 +97,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             murals.classList.toggle('is-map-active');
             switchButton.dataset.muralsSwitch = murals.classList.contains('is-map-active') ? 'List View' : 'Map View';
             map.fitBounds(bounds);
-            map.setZoom(map.getZoom() - 2);
             murals.scrollIntoView({behavior: 'smooth'})
         })
     }
