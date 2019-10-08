@@ -95,12 +95,11 @@ if ($query && count($query->posts) > 0) {
 											$directions = "https://www.google.com/maps/dir//" . $location['address'];
 											$year = $mural->year;
 											$yearColor = $year->slug === $currentYear ? $color : "#000000";
-											// $type = get_the_terms($mural->ID, 'type');
 
 											if ($artistHasPage) {
 												$relatedArtist = get_field('related_artist', $mural->ID);
 											} else {
-												$artistName = get_field('artistName', $mural->ID);
+												$artistName = get_field('artist_name', $mural->ID);
 											}
 
 											echo '<div class="murals-list-item">
@@ -119,7 +118,7 @@ if ($query && count($query->posts) > 0) {
 													</div>';
 												} else {
 													echo '<div class="murals-list-item-info">
-														<h3>' . $artistName ?? $business . '</h3>
+														<h3>' . ($artistName ? $artistName : $business) . '</h3>
 														<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
 														<p><a href="'. $directions .'">Get Directions</a></p>
 													</div>';
