@@ -89,6 +89,13 @@ class WallMapPublic
         );
 
         wp_enqueue_script(
+            $this->plugin_name . "_cluster",
+            'https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js',
+            [],
+            false
+        );
+
+        wp_enqueue_script(
             $this->plugin_name . "_app",
             plugin_dir_url(__FILE__) . 'js/murals.js',
             [$this->plugin_name . "_vendor"],
