@@ -33,6 +33,7 @@ if ($query && count($query->posts) > 0) {
 			"business" => get_field('business_name', $mural->ID),
 			"address" => get_field('display_address', $mural->ID),
 			"location" => get_field('location', $mural->ID),
+			"currentStatus" => get_field('status', $mural->ID),
 			"image" => get_the_post_thumbnail_url($mural->ID, 'medium_large'),
 			"year" => $year,
 			"isCurrent" => $currentYear === $year->name,
@@ -95,6 +96,7 @@ if ($query && count($query->posts) > 0) {
 											$directions = "https://www.google.com/maps/dir//" . $location['address'];
 											$year = $mural->year;
 											$yearColor = $year->slug === $currentYear ? $color : "#000000";
+											$status = $mural->currentStatus;
 
 											if ($artistHasPage) {
 												$relatedArtist = get_field('related_artist', $mural->ID);
@@ -110,7 +112,12 @@ if ($query && count($query->posts) > 0) {
 													</div>';
 
 											if ($artistHasPage) {
-												echo '<div class="murals-list-item-info">
+												echo '<div class="murals-list-item-info">	
+														<div>' . ($status == 'Buffed' ? '<span class="murals-status">
+														<img src=' . plugin_dir_url(dirname(__FILE__)) . 'public/img/wall-buffed.svg' . ' >
+														Buffed</span>' : ($status == 'Demolished' ? '<span class="murals-status">
+														<img src=' . plugin_dir_url(dirname(__FILE__)) . 'public/img/wall-demolished.svg' . ' >
+														Demolished</span>' : '' )) . '</div>
 														<h3>' . $relatedArtist->post_title . '</h3>
 														<p>' . $business . '</p>
 														<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
@@ -118,6 +125,11 @@ if ($query && count($query->posts) > 0) {
 													</div>';
 											} else {
 												echo '<div class="murals-list-item-info">
+														<div>' . ($status == 'Buffed' ? '<span class="murals-status">
+														<img src=' . plugin_dir_url(dirname(__FILE__)) . 'public/img/wall-buffed.svg' . ' >
+														Buffed</span>' : ($status == 'Demolished' ? '<span class="murals-status">
+														<img src=' . plugin_dir_url(dirname(__FILE__)) . 'public/img/wall-demolished.svg' . ' >
+														Demolished</span>' : '' )) . '</div>
 														<h3>' . ($artistName ? $artistName : $business) . '</h3>
 														<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
 														<p><a href="' . $directions . '" target="_blank" rel="noopener noreferrer">Get Directions</a></p>
