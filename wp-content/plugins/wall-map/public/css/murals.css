@@ -188,12 +188,21 @@
 }
 
 .murals-status {
+    padding-top: 1rem;
     color: #D62828;
     font-weight: bold;
     font-size: 10px;
     letter-spacing: 0.115em;
     line-height: 15px;
     text-transform: uppercase;
+}
+
+.murals-status img {
+    padding-right: 0.5rem;
+}
+
+.murals-status div {
+    text-align: right;
 }
 
 .murals-tag span {
