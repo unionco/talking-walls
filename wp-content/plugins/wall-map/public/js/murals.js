@@ -129,6 +129,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
       murals.scrollIntoView({ behavior: 'smooth' });
     });
   }
+
+  var muralStatus = document.getElementsByClassName('murals-status');
+  if (muralStatus.length > 0) {
+    if (muralStatus[0].firstElementChild.innerText.toLowerCase() === 'demolished') {
+      muralStatus[0].firstElementChild.innerHTML = "<span><img src='/wp-content/plugins/wall-map/public/img/wall-demolished.svg' />Wall Demolished</span>"
+    } else {
+      muralStatus[0].firstElementChild.innerHTML = "<span><img src='/wp-content/plugins/wall-map/public/img/wall-buffed.svg' />Wall Buffed</span>"
+    }
+  }
 });
 
 var mapStyle = [
