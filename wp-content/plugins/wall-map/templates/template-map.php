@@ -115,9 +115,9 @@ if ($query && count($query->posts) > 0) {
 												echo '<div class="murals-list-item-info">	
 														<div>' . ($status == 'Buffed' ? '<span class="murals-status">
 														<img src=' . plugin_dir_url(dirname(__FILE__)) . 'public/img/wall-buffed.svg' . ' >
-														Buffed</span>' : ($status == 'Demolished' ? '<span class="murals-status">
+														Wall Buffed</span>' : ($status == 'Demolished' ? '<span class="murals-status">
 														<img src=' . plugin_dir_url(dirname(__FILE__)) . 'public/img/wall-demolished.svg' . ' >
-														Demolished</span>' : '' )) . '</div>
+														Wall Demolished</span>' : '' )) . '</div>
 														<h3>' . $relatedArtist->post_title . '</h3>
 														<p>' . $business . '</p>
 														<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
@@ -127,9 +127,9 @@ if ($query && count($query->posts) > 0) {
 												echo '<div class="murals-list-item-info">
 														<div>' . ($status == 'Buffed' ? '<span class="murals-status">
 														<img src=' . plugin_dir_url(dirname(__FILE__)) . 'public/img/wall-buffed.svg' . ' >
-														Buffed</span>' : ($status == 'Demolished' ? '<span class="murals-status">
+														Wall Buffed</span>' : ($status == 'Demolished' ? '<span class="murals-status">
 														<img src=' . plugin_dir_url(dirname(__FILE__)) . 'public/img/wall-demolished.svg' . ' >
-														Demolished</span>' : '' )) . '</div>
+														Wall Demolished</span>' : '' )) . '</div>
 														<h3>' . ($artistName ? $artistName : $business) . '</h3>
 														<p>' . str_replace("\n", "<br/>", $displayAddress) . '</p>
 														<p><a href="' . $directions . '" target="_blank" rel="noopener noreferrer">Get Directions</a></p>
