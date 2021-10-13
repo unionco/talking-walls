@@ -96,6 +96,33 @@ window.addEventListener('DOMContentLoaded', (event) => {
     new markerClusterer.MarkerClusterer({
       map: map,
       markers: clusterMarkers,
+      renderer: {
+        render: function ({ count, position }, stats) {
+          let color = '#6600FF';
+
+          // create svg url with fill color
+          let svg = window.btoa(`
+        <svg fill="${color}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+          <circle cx="120" cy="120" r="70" />    
+        </svg>`);
+
+          // create marker using svg icon
+          return new google.maps.Marker({
+            position,
+            icon: {
+              url: `data:image/svg+xml;base64,${svg}`,
+              scaledSize: new google.maps.Size(75, 75),
+            },
+            label: {
+              text: String(count),
+              color: 'rgba(255,255,255,0.9)',
+              fontSize: '12px',
+            },
+            // adjust zIndex to be above other markers
+            zIndex: Number(google.maps.Marker.MAX_ZINDEX) + count,
+          });
+        },
+      },
     });
 
     for (var i = 0; i < items.length; i++) {
